@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "numeroPedido": "PED-413842",
+    "usuario": "admin",
+    "items": [
+      {
+        "id": 1,
+        "nombre": "MacBook Air 13\" M1",
+        "precioUnitario": 3899,
+        "cantidad": 1,
+        "subtotal": 3899
+      },
+      {
+        "id": 10,
+        "nombre": "Teclado Mecánico FiddlerZ RGB",
+        "precioUnitario": 199,
+        "cantidad": 2,
+        "subtotal": 398
+      }
+    ],
+    "total": 4297,
+    "fecha": "2026-09-29T17:53:33.842Z",
+    "estado": "Completado"
+  }
+]

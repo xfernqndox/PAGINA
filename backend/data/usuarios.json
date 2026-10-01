@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "usuario": "admin",
+    "clave": "admin",
+    "nombre": "Administrador PC PE'",
+    "rol": "admin"
+  }
+]

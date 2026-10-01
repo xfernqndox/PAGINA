@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nombre": "María Torres",
+    "area": "Ventas - Laptops y Monitores",
+    "whatsapp": "51987654321",
+    "correo": "maria.torres@impacta.pe"
+  },
+  {
+    "id": 2,
+    "nombre": "Carlos Ramírez",
+    "area": "Ventas - Celulares y Accesorios",
+    "whatsapp": "51912345678",
+    "correo": "carlos.ramirez@impacta.pe"
+  },
+  {
+    "id": 3,
+    "nombre": "Lucía Fernández",
+    "area": "Soporte técnico y Componentes",
+    "whatsapp": "51998877665",
+    "correo": "lucia.fernandez@impacta.pe"
+  }
+]

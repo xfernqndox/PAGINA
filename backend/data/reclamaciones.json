@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "codigo": "REC-413834",
+    "nombre": "Juan Perez",
+    "dni": "12345678",
+    "email": "juan@correo.com",
+    "tipo": "Reclamo",
+    "detalle": "Demora en la entrega del producto adquirido.",
+    "fecha": "2026-09-29T17:53:33.834Z",
+    "estado": "Pendiente de atención"
+  }
+]

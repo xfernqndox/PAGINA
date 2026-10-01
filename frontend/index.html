@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC PE'</title>
+
+    <!-- 1. Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- 2. Bootstrap Icons (¡ESTA LÍNEA ES LA QUE HACE VER LOS ÍCONOS Y EL RAYO!) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- 3. Tu archivo de estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar main-navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                PC PE'
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <!-- Menú principal -->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reclamaciones.html">Libro de reclamaciones</a>
+                    </li>
+                </ul>
+                <!-- Menú del usuario -->
+                <ul class="navbar-nav">
+                    <!-- Carrito -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">
+                            🛒 Carrito
+                            <span class="badge" id="contador-carrito">0</span>
+                        </a>
+                    </li>
+                    <!-- Iniciar sesión -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" id="enlace-login">Iniciar sesión</a>
+                    </li>
+                    <!-- Usuario conectado -->
+                    <li class="nav-item dropdown d-none" id="menu-usuario">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Hola, <span id="nombre-usuario">Usuario</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="#" id="btn-salir">Cerrar sesión</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+    <main>
+        <!-- ===== PORTADA ===== -->
+        <section class="hero-compact">
+            <div class="container py-4">
+                <div class="row align-items-center">
+
+                    <!-- Llama flotante a la izquierda (Cambiado a col-lg-6) -->
+                    <div class="col-lg-6 text-center my-3">
+                        <div class="llama-wrapper">
+                            <img src="img/logo/llama.png" alt="Mascota PC PE" class="llama-3d-effect">
+                        </div>
+                    </div>
+
+                    <!-- Texto Tech a la derecha (Cambiado a col-lg-6) -->
+                    <div class="col-lg-6 my-3 text-center text-lg-start">
+                        <h1 class="tech-title my-2">
+                            TU SETUP EN MANOS DE <br>
+                            <span class="neon-text">EXPERTOS EN TECH</span>
+                        </h1>
+                        <p class="tech-subtext mb-4">
+                            Componentes de alto rendimiento seleccionados por tu llama de confianza.
+                        </p>
+                        <!-- Botón con animación interactiva -->
+                        <a href="#catalogo" class="btn-tech-action">
+                            <span>EXPLORAR CATÁLOGOS</span>
+                            <i class="bi bi-arrow-down-short fs-4 icon-arrow"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CATÁLOGO ==================== -->
+        <section id="catalogo" class="py-5">
+            <div class="container">
+                <div class="mb-4">
+                    <span class="text-uppercase text-info fw-bold fs-7">NUESTRO CATÁLOGO</span>
+                    <h2 class="fw-bold text-white">Productos destacados</h2>
+                </div>
+
+                <div class="catalog-layout">
+                    <!-- ==================== FILTROS ==================== -->
+                    <aside class="filter-panel mb-4">
+                        <div class="filter-title mb-3">
+                            <span>☷</span>
+                            <h3 class="d-inline ms-2 fs-5">Filtrar productos</h3>
+                        </div>
+
+                        <!-- Usamos row de Bootstrap para ordenar los controles en una sola línea -->
+                        <div class="row g-3 align-items-end">
+                            <!-- Buscar -->
+                            <div class="col-md-4 col-lg-3">
+                                <label for="buscar" class="form-label text-white small mb-1">Buscar producto</label>
+                                <input type="text" id="buscar" class="form-control" placeholder="Ej. teclado gamer...">
+                            </div>
+
+                            <!-- Categoría -->
+                            <div class="col-md-3 col-lg-3">
+                                <label for="filtro-categoria" class="form-label text-white small mb-1">Categoría</label>
+                                <select id="filtro-categoria" class="form-select">
+                                    <option value="">Todas las categorías</option>
+                                </select>
+                            </div>
+
+                            <!-- Ordenar -->
+                            <div class="col-md-3 col-lg-3">
+                                <label for="filtro-orden" class="form-label text-white small mb-1">Ordenar por</label>
+                                <select id="filtro-orden" class="form-select">
+                                    <option value="">Ordenar por...</option>
+                                    <option value="precio-asc">Precio: menor a mayor</option>
+                                    <option value="precio-desc">Precio: mayor a menor</option>
+                                    <option value="nombre">Nombre (A-Z)</option>
+                                </select>
+                            </div>
+
+                            <!-- Checkbox Solo ofertas -->
+                            <div class="col-md-2 col-lg-3 pb-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="filtro-ofertas">
+                                    <label class="form-check-label text-white small" for="filtro-ofertas">
+                                        Solo ofertas
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <!-- ==================== PRODUCTOS ==================== -->
+                    <section class="products-area">
+
+                        <!-- Lista dinámica de productos -->
+                        <div class="row g-3" id="lista-productos"></div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="main-footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Brand Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-brand d-flex align-items-center gap-2 mb-3">
+                        <i class="bi bi-lightning-charge-fill text-warning"></i>
+                        <span>PC PE'</span>
+                    </h5>
+                    <p class="footer-desc">
+                        Tienda de tecnología: laptops, celulares, componentes, accesorios y monitores.
+                    </p>
+                </div>
+
+                <!-- Enlaces -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title mb-3">Enlaces</h5>
+                    <ul class="list-unstyled footer-links mb-0">
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="#ofertas">Ofertas</a></li>
+                        <li><a href="contacto.html">Contacto con asesores</a></li>
+                        <li><a href="reclamaciones.html">Libro de reclamaciones</a></li>
+                        <li><a href="login.html">Iniciar sesión</a></li>
+                    </ul>
+                </div>
+
+                <!-- Síguenos -->
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="footer-title mb-3">Síguenos</h5>
+                    <div class="footer-socials d-flex gap-3">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider my-4">
+
+            <div class="text-center text-muted small">
+                © 2026 PC PE'. Proyecto académico – Curso de Programación Web.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/catalogo.js"></script>
+
+    <!-- Inicializar catálogo -->
+    <script>
+        document.addEventListener("DOMContentLoaded", initCatalogo);
+    </script>
+</body>
+
+</html>

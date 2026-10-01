@@ -52,7 +52,7 @@ function tarjetaProducto(p) {
     '      <div class="d-grid gap-2">' +
     '        <a href="producto.html?id=' +
     p.id +
-    '" class="btn btn-outline-primary btn-sm">Ver detalle</a>' +
+    '" class="btn btn-ver-detalle btn-sm">Ver detalle</a>' +
     '        <button class="btn btn-primary btn-sm" onclick="agregarAlCarrito(' +
     p.id +
     ')">Agregar al carrito</button>' +

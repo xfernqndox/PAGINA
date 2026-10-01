@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     '      <label for="cantidad" class="form-label mb-0">Cantidad:</label>' +
     '      <input type="number" id="cantidad" class="form-control" style="width:90px" value="1" min="1">' +
     "    </div>" +
-    '    <button id="btn-agregar" class="btn btn-primary btn-lg">Agregar al carrito</button>' +
+    '    <button id="btn-agregar" class="btn btn-lg btn-agregar-carrito">Agregar al carrito</button>' +
     '    <a href="index.html" class="btn btn-link seguir-comprando">Seguir comprando</a>' +
     "  </div>" +
     "</div>" +

@@ -535,3 +535,55 @@ footer h6 {
     background-color: #38bdf8 !important;
     color: #061326 !important;
 }
+/* ===== TODOS LOS BOTONES AGREGAR AL CARRITO ===== */
+
+.btn-agregar-carrito,
+.card .btn-primary {
+    background-color: #38bdf8 !important;
+    border: 2px solid #38bdf8 !important;
+    color: #061326 !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-agregar-carrito:hover,
+.card .btn-primary:hover {
+    background-color: #7dd3fc !important;
+    border-color: #7dd3fc !important;
+    color: #061326 !important;
+    transform: translateY(-2px);
+}
+.btn-ver-detalle {
+    background-color: transparent !important;
+    border: 2px solid #38bdf8 !important;
+    color: #38bdf8 !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-ver-detalle:hover {
+    background-color: #38bdf8 !important;
+    border-color: #38bdf8 !important;
+    color: #061326 !important;
+    transform: translateY(-2px);
+}
+/* seguir comprando */
+.seguir-comprando {
+    display: inline-block;
+    color: #38bdf8 !important;
+    background: transparent !important;
+    border: 2px solid #38bdf8 !important;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none !important;
+    padding: 8px 14px;
+    margin-left: 5px;
+    transition: all 0.2s ease;
+}
+
+.seguir-comprando:hover {
+    background: #38bdf8 !important;
+    color: #061326 !important;
+    border-color: #38bdf8 !important;
+    transform: translateY(-2px);
+}

@@ -587,3 +587,141 @@ footer h6 {
     border-color: #38bdf8 !important;
     transform: translateY(-2px);
 }
+/* ============================================================
+   CONTACTO
+   ============================================================ */
+
+.contacto-titulo {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.contacto-descripcion {
+    color: #cbd5e1 !important;
+    margin-bottom: 24px;
+}
+/* ===== DIVIDER CONTACTO ===== */
+.contacto-divider {
+    border-color: #38bdf8 !important;
+    opacity: 0.35;
+    margin: 35px 0;
+}
+
+.formulario-titulo {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+/* ===== INPUTS DE CONTACTO ===== */
+.contacto-input {
+    background-color: #0b203b !important;
+    border: 1px solid #294b70 !important;
+    color: #ffffff !important;
+    border-radius: 7px;
+}
+
+.contacto-input:focus {
+    background-color: #0b203b !important;
+    border-color: #38bdf8 !important;
+    box-shadow: 0 0 0 0.2rem rgba(56, 189, 248, 0.15) !important;
+    color: #ffffff !important;
+}
+
+.contacto-input::placeholder {
+    color: #94a3b8;
+}
+/* ===== BOTÓN ENVIAR CONTACTO ===== */
+.btn-enviar-contacto {
+    background-color: #38bdf8 !important;
+    border: 2px solid #38bdf8 !important;
+    color: #061326 !important;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.btn-enviar-contacto:hover {
+    background-color: #7dd3fc !important;
+    border-color: #7dd3fc !important;
+    color: #061326 !important;
+    transform: translateY(-2px);
+}
+/* ===== BOTÓN CORREO ASESOR ===== */
+.btn-correo-asesor {
+    background-color: transparent !important;
+    border: 2px solid #38bdf8 !important;
+    color: #38bdf8 !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-correo-asesor:hover {
+    background-color: #38bdf8 !important;
+    border-color: #38bdf8 !important;
+    color: #061326 !important;
+    transform: translateY(-2px);
+}
+/* ===== BOTÓN WHATSAPP ===== */
+.btn-whatsapp {
+    background-color: #16A34A !important;
+    border: 2px solid #16A34A !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #15803D !important;
+    border-color: #15803D !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+.btn-enviar-reclamo {
+    display: inline-block !important;
+    background-color: #38BDF8 !important;
+    background-image: none !important;
+    border: 2px solid #38BDF8 !important;
+    color: #061326 !important;
+    opacity: 1 !important;
+    font-weight: 700 !important;
+    padding: 9px 18px;
+    border-radius: 7px;
+    transition: all 0.2s ease;
+}
+/* ===== BOTÓN ENVIAR RECLAMO ===== */
+.btn-enviar-reclamo:hover {
+    background-color: #7DD3FC !important;
+    background-image: none !important;
+    border-color: #7DD3FC !important;
+    color: #061326 !important;
+    opacity: 1 !important;
+    transform: translateY(-2px);
+}
+
+.btn-enviar-reclamo:disabled {
+    background-color: #38BDF8 !important;
+    border-color: #38BDF8 !important;
+    color: #061326 !important;
+    opacity: 0.7 !important;
+}
+/* ===== OCULTAR CATEGORÍA DE PRODUCTO ===== */
+.categoria-producto {
+    display: none !important;
+}
+/* ===== BOTÓN FINALIZAR COMPRA ===== */
+.btn-finalizar-compra {
+    background-color: #38BDF8 !important;
+    border: 2px solid #38BDF8 !important;
+    color: #061326 !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-finalizar-compra:hover {
+    background-color: #7DD3FC !important;
+    border-color: #7DD3FC !important;
+    color: #061326 !important;
+    transform: translateY(-2px);
+}

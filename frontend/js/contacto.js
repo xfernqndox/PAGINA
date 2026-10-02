@@ -67,10 +67,10 @@ document.addEventListener("DOMContentLoaded", async function () {
           a.whatsapp +
           "?text=" +
           mensaje +
-          '" target="_blank" rel="noopener" class="btn btn-success btn-sm w-100 mb-2">Escribir por WhatsApp</a>' +
+          '" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm w-100 mb-2">Escribir por WhatsApp</a>' +
           '      <a href="mailto:' +
           a.correo +
-          '" class="btn btn-outline-primary btn-sm w-100">' +
+          '" class="btn btn-correo-asesor btn-sm w-100">' +
           a.correo +
           "</a>" +
           "    </div>" +

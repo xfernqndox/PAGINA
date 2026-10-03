@@ -176,13 +176,9 @@ const PRODUCTOS = [
 
   // ---------------------- CELULARES ----------------------
   {
-<<<<<<< HEAD
-    id: 4,
-    nombre: "iPhone 14 Pro ",
-=======
     id: 10,
     nombre: "iPhone 14 Pro Max",
->>>>>>> dcb006de7ce98fb4bfe3e4edb291c352194f2f77
+
     categoria: "Celulares",
     precio: 1899.0,
     precioOferta: 1550.0,
@@ -803,7 +799,7 @@ const PRODUCTOS = [
     }
   },
   	{
-    id: 45,
+    id: 46,
     nombre: "Monitor Curvo gaming TEROS TE-3412G 34 UWQHD PREMIUM",
     categoria: "Monitores",
     precio: 890.0,
@@ -821,7 +817,7 @@ const PRODUCTOS = [
     }
   },
   {
-    id: 46,
+    id: 47,
     nombre: "Monitor Curvo TEROS TE-3253S 31.5",
     categoria: "Monitores",
     precio: 490.0,

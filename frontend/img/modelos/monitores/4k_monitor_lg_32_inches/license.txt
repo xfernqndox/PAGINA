@@ -1,0 +1,8 @@
+Model Information:
+* title:	4k monitor (LG, 32 inches)
+* source:	https://sketchfab.com/3d-models/4k-monitor-lg-32-inches-0df42bdc3d0a41b6b7f2710b08724d5b
+* author:	cereal (https://sketchfab.com/skeeeyee)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

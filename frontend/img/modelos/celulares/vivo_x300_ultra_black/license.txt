@@ -1,0 +1,8 @@
+Model Information:
+* title:	Vivo X300 Ultra Black
+* source:	https://sketchfab.com/3d-models/vivo-x300-ultra-black-cdd6f25e16cc4e4a85995de473634d5b
+* author:	extraakash (https://sketchfab.com/AakashMansukhani)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

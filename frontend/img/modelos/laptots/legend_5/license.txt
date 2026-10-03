@@ -1,0 +1,11 @@
+Model Information:
+* title:	Legend 5
+* source:	https://sketchfab.com/3d-models/legend-5-74ce56161fd942269c23a51e32109ea4
+* author:	churliaevyaroslav (https://sketchfab.com/churliaevyaroslav)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Legend 5" (https://sketchfab.com/3d-models/legend-5-74ce56161fd942269c23a51e32109ea4) by churliaevyaroslav (https://sketchfab.com/churliaevyaroslav) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

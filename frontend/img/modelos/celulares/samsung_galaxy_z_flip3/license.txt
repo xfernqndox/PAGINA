@@ -1,0 +1,11 @@
+Model Information:
+* title:	Samsung Galaxy Z Flip3
+* source:	https://sketchfab.com/3d-models/samsung-galaxy-z-flip3-1325eb30ec8e4c8480762551a4eb1928
+* author:	gozdemrl (https://sketchfab.com/gozdemrl)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Samsung Galaxy Z Flip3" (https://sketchfab.com/3d-models/samsung-galaxy-z-flip3-1325eb30ec8e4c8480762551a4eb1928) by gozdemrl (https://sketchfab.com/gozdemrl) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

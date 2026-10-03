@@ -66,11 +66,12 @@ const PRODUCTOS = [
   // ---------------------- CELULARES ----------------------
   {
     id: 4,
-    nombre: "iPhone 14 Pro Max",
+    nombre: "iPhone 14 Pro ",
     categoria: "Celulares",
     precio: 1899.0,
     precioOferta: 1550.0,
-    imagen: "img/productos/14pro.jpg",
+    imagen: "img/productos_estatic/14_pro.jpg",
+    modelo3D: "img/modelos/celulares/iphone_14_pro/scene.gltf",
     descripcion:
       "Pantalla ProMotion de 6.7 pulgadas, Dynamic Island y chip A16 Bionic",
     especificaciones: {

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Samsung Odyssey OLED G9
+* source:	https://sketchfab.com/3d-models/samsung-odyssey-oled-g9-85967f0cc293466ca6f3016824835817
+* author:	eltayerkebulan (https://sketchfab.com/eltayerkebulan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Samsung Odyssey OLED G9" (https://sketchfab.com/3d-models/samsung-odyssey-oled-g9-85967f0cc293466ca6f3016824835817) by eltayerkebulan (https://sketchfab.com/eltayerkebulan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

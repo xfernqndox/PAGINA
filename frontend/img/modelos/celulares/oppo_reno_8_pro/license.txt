@@ -1,0 +1,11 @@
+Model Information:
+* title:	Oppo Reno 8 Pro
+* source:	https://sketchfab.com/3d-models/oppo-reno-8-pro-a8bc509078994d01aa2b858f32c13289
+* author:	me_blender (https://sketchfab.com/me_blender)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Oppo Reno 8 Pro" (https://sketchfab.com/3d-models/oppo-reno-8-pro-a8bc509078994d01aa2b858f32c13289) by me_blender (https://sketchfab.com/me_blender) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

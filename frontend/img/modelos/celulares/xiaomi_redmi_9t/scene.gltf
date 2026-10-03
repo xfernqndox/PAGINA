@@ -1,0 +1,806 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 75,
+      "max": [
+        0.7554029822349548,
+        3.7886409759521484,
+        0.043028999119997025
+      ],
+      "min": [
+        -0.7554029822349548,
+        3.6223790645599365,
+        -0.09418399631977081
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 900,
+      "componentType": 5126,
+      "count": 75,
+      "max": [
+        0.992554783821106,
+        0.9975621700286865,
+        0.9854410290718079
+      ],
+      "min": [
+        -0.9758561849594116,
+        -0.013398885726928711,
+        -0.999910295009613
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 75,
+      "max": [
+        0.8823000192642212,
+        0.7005820274353027
+      ],
+      "min": [
+        0.13502900302410126,
+        0.2974039912223816
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 282,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1800,
+      "componentType": 5126,
+      "count": 205,
+      "max": [
+        -0.6168590188026428,
+        3.755063056945801,
+        0.043028999119997025
+      ],
+      "min": [
+        -0.8978660106658936,
+        -0.022022999823093414,
+        -0.09957700222730637
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 4260,
+      "componentType": 5126,
+      "count": 205,
+      "max": [
+        0.989775538444519,
+        0.9978727698326111,
+        0.9999913573265076
+      ],
+      "min": [
+        -0.9998443722724915,
+        -0.9978705644607544,
+        -0.9999911785125732
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 600,
+      "componentType": 5126,
+      "count": 205,
+      "max": [
+        0.6997600197792053,
+        0.9935020208358765
+      ],
+      "min": [
+        0.16915200650691986,
+        0.009744999930262566
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1128,
+      "componentType": 5125,
+      "count": 672,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 6720,
+      "componentType": 5126,
+      "count": 45,
+      "max": [
+        0.887732982635498,
+        3.755063056945801,
+        0.043028999119997025
+      ],
+      "min": [
+        0.6168590188026428,
+        -0.022022999823093414,
+        -0.09957700222730637
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 7260,
+      "componentType": 5126,
+      "count": 45,
+      "max": [
+        0.9998443722724915,
+        0.637475848197937,
+        0.7089887857437134
+      ],
+      "min": [
+        -0.16836248338222504,
+        -0.6288567781448364,
+        -0.9877548217773438
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2240,
+      "componentType": 5126,
+      "count": 45,
+      "max": [
+        0.6433950066566467,
+        0.954380989074707
+      ],
+      "min": [
+        0.3511039912700653,
+        0.06374099850654602
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 3816,
+      "componentType": 5125,
+      "count": 168,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 7800,
+      "componentType": 5126,
+      "count": 110,
+      "max": [
+        0.8520560264587402,
+        0.10675500333309174,
+        0.043028999119997025
+      ],
+      "min": [
+        -0.8520560264587402,
+        -0.0348300002515316,
+        -0.09432400017976761
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 9120,
+      "componentType": 5126,
+      "count": 110,
+      "max": [
+        0.9981982111930847,
+        0.11070208251476288,
+        0.9999051690101624
+      ],
+      "min": [
+        -0.9981982111930847,
+        -0.9999843835830688,
+        -0.9999051690101624
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 2600,
+      "componentType": 5126,
+      "count": 110,
+      "max": [
+        0.8206200003623962,
+        0.6905760169029236
+      ],
+      "min": [
+        0.1726430058479309,
+        0.1928340047597885
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 4488,
+      "componentType": 5125,
+      "count": 330,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 10440,
+      "componentType": 5126,
+      "count": 736,
+      "max": [
+        0.8361150026321411,
+        3.780791997909546,
+        0.12097500264644623
+      ],
+      "min": [
+        -0.8361150026321411,
+        -0.024101000279188156,
+        0.0419280007481575
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 19272,
+      "componentType": 5126,
+      "count": 736,
+      "max": [
+        0.999945878982544,
+        0.9992179870605469,
+        1.0
+      ],
+      "min": [
+        -0.9995010495185852,
+        -0.9999833703041077,
+        -0.9999924898147583
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 3480,
+      "componentType": 5126,
+      "count": 736,
+      "max": [
+        0.9786450266838074,
+        0.9908810257911682
+      ],
+      "min": [
+        0.021354999393224716,
+        0.009119000285863876
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 5808,
+      "componentType": 5125,
+      "count": 3396,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 28104,
+      "componentType": 5126,
+      "count": 2772,
+      "max": [
+        0.8469730019569397,
+        3.757236957550049,
+        -0.09475500136613846
+      ],
+      "min": [
+        -0.8460890054702759,
+        0.01694200001657009,
+        -0.09497900307178497
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 61368,
+      "componentType": 5126,
+      "count": 2772,
+      "max": [
+        0.7214304208755493,
+        0.749803364276886,
+        -0.538093090057373
+      ],
+      "min": [
+        -0.7212961316108704,
+        -0.8026316165924072,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 9368,
+      "componentType": 5126,
+      "count": 2772,
+      "max": [
+        0.7412009835243225,
+        0.9112480282783508
+      ],
+      "min": [
+        0.5384420156478882,
+        0.10964900255203247
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 19392,
+      "componentType": 5125,
+      "count": 4860,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 94632,
+      "componentType": 5126,
+      "count": 1381,
+      "max": [
+        0.7933200001716614,
+        3.6941540241241455,
+        -0.09475500136613846
+      ],
+      "min": [
+        -0.7924360036849976,
+        0.15223899483680725,
+        -0.09497900307178497
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 111204,
+      "componentType": 5126,
+      "count": 1381,
+      "max": [
+        0.8216574192047119,
+        0.7672752141952515,
+        1.0
+      ],
+      "min": [
+        -0.8262161612510681,
+        -0.7599145174026489,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 31544,
+      "componentType": 5126,
+      "count": 1381,
+      "max": [
+        0.9966260194778442,
+        1.0034250020980835
+      ],
+      "min": [
+        0.003375000087544322,
+        0.0028200000524520874
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 38832,
+      "componentType": 5125,
+      "count": 2376,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "LanosBeamng (https://sketchfab.com/LanosBeamng)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/xiaomi-redmi-9t-68794884eb674ea2b3cc6cbd1c668b03",
+      "title": "Xiaomi Redmi 9T"
+    },
+    "generator": "Sketchfab-16.28.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 48336,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 42592,
+      "byteOffset": 48336,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 127776,
+      "byteOffset": 90928,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 218704,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_materials_emissive_strength"
+  ],
+  "images": [
+    {
+      "uri": "textures/Verh.001_baseColor.png"
+    },
+    {
+      "uri": "textures/BokLev.001_baseColor.png"
+    },
+    {
+      "uri": "textures/BokPrav.001_baseColor.png"
+    },
+    {
+      "uri": "textures/Niz.001_baseColor.png"
+    },
+    {
+      "uri": "textures/Zad.001_baseColor.png"
+    },
+    {
+      "uri": "textures/Display.001_baseColor.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Verh.001",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8308205978495098
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "BokLev.001",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8308205978495098
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "BokPrav.001",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 2
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8308205978495098
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Niz.001",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8308205978495098
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Zad.001",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 4
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8308205978495098
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Display.001",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 5
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.8211145618000169
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_emissive_strength": {
+          "emissiveStrength": 10.0
+        }
+      },
+      "name": "Photo.002",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Xiaomi Redmi 9T_Verh.001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Xiaomi Redmi 9T_BokLev.001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Xiaomi Redmi 9T_BokPrav.001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Xiaomi Redmi 9T_Niz.001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Xiaomi Redmi 9T_Zad.001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 17,
+            "POSITION": 16,
+            "TEXCOORD_0": 18
+          },
+          "indices": 19,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Xiaomi Redmi 9T_Display.001_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 21,
+            "POSITION": 20,
+            "TEXCOORD_0": 22
+          },
+          "indices": 23,
+          "material": 5,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Xiaomi Redmi 9T_Photo.002_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 25,
+            "POSITION": 24,
+            "TEXCOORD_0": 26
+          },
+          "indices": 27,
+          "material": 6,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Redmi 9T.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "matrix": [
+        100.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        99.99999999999972,
+        -7.5497901264043296e-06,
+        0.0,
+        0.0,
+        7.5497901264043296e-06,
+        99.99999999999972,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Xiaomi Redmi 9T"
+    },
+    {
+      "mesh": 0,
+      "name": "Xiaomi Redmi 9T_Verh.001_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Xiaomi Redmi 9T_BokLev.001_0"
+    },
+    {
+      "mesh": 2,
+      "name": "Xiaomi Redmi 9T_BokPrav.001_0"
+    },
+    {
+      "mesh": 3,
+      "name": "Xiaomi Redmi 9T_Niz.001_0"
+    },
+    {
+      "mesh": 4,
+      "name": "Xiaomi Redmi 9T_Zad.001_0"
+    },
+    {
+      "mesh": 5,
+      "name": "Xiaomi Redmi 9T_Display.001_0"
+    },
+    {
+      "mesh": 6,
+      "name": "Xiaomi Redmi 9T_Photo.002_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    }
+  ]
+}

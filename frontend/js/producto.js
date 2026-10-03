@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   let producto = null;
 
   try {
-    const res = await fetch(`/api/productos/${id}`);
+    const res = await fetch(`http://localhost:3000/api/productos/${id}`);
     if (res.ok) {
       const data = await res.json();
       if (data.ok && data.producto) {
@@ -84,15 +84,45 @@ document.addEventListener("DOMContentLoaded", async function () {
         "</td></tr>";
     }
   }
-// Renderizar el detalle del producto
+
+  // Renderizar el detalle del producto con el componente oficial directo
+  // Dentro de tu archivo js/producto.js
+  let htmlVisual;
+
+  if (producto.modelo3D) {
+    // AQUÍ SE DECLARA EL COMPONENTE INTERACTIVO 3D
+    htmlVisual = `
+    <model-viewer 
+      src="${producto.modelo3D}" 
+      camera-controls 
+      auto-rotate
+      camera-orbit="0deg 75deg 105%"
+      shadow-intensity="1" 
+      style="width: 100%; height: 400px; background-color: #cbe0ec7f; border-radius: 12px; border: 1px solid #202c33;">
+    </model-viewer>
+    <p class="text-center text-muted small mt-2">✨ Usa el mouse para girar el producto en 360°</p>
+  `;
+  } else {
+    // Si el producto no tiene modelo 3D, muestra la imagen normal
+    htmlVisual = `
+    <img 
+      src="${producto.imagen}" 
+      class="img-fluid border rounded p-3 bg-white" 
+      alt="${producto.nombre}" 
+      onerror="imagenNoDisponible(this)">
+  `;
+  }
+
+  // Después de esto, tu código debe inyectar "htmlVisual" dentro del contenedor de la página
+  // Por ejemplo: document.getElementById('detalle-producto').innerHTML = ...
+
+
+
+
   contenedor.innerHTML =
     '<div class="row g-4">' +
     '  <div class="col-md-5">' +
-    '    <img src="' +
-    producto.imagen +
-    '" class="img-fluid border rounded p-3 bg-white" alt="' +
-    producto.nombre +
-    '" onerror="imagenNoDisponible(this)">' +
+    htmlVisual + // Aquí inyectamos dinámicamente el 3D o la imagen estática
     "  </div>" +
     '  <div class="col-md-7">' +
     '    <span class="badge mb-2 categoria-producto">' +
@@ -114,10 +144,10 @@ document.addEventListener("DOMContentLoaded", async function () {
     "  </div>" +
     "</div>" +
     (filasEspecificaciones ? '<h4 class="mt-5">Especificaciones técnicas</h4>' +
-    '<table class="table table-striped table-bordered mt-3">' +
-    "<tbody>" +
-    filasEspecificaciones +
-    "</tbody></table>" : "");
+      '<table class="table table-striped table-bordered mt-3">' +
+      "<tbody>" +
+      filasEspecificaciones +
+      "</tbody></table>" : "");
 
   // Botón agregar al carrito
   document.getElementById("btn-agregar").addEventListener("click", function () {

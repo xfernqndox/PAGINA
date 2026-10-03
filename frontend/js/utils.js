@@ -23,7 +23,7 @@ function sincronizarProductosCache(lista) {
 async function precargarProductosDesdeAPI() {
   if (PRODUCTOS_API_CACHE.length === 0) {
     try {
-      const res = await fetch("/api/productos");
+      const res = await fetch("http://localhost:3000/api/productos");
       if (res.ok) {
         const data = await res.json();
         if (data.ok && Array.isArray(data.productos)) {

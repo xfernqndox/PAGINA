@@ -1,0 +1,11 @@
+Model Information:
+* title:	Xiaomi Redmi 9T
+* source:	https://sketchfab.com/3d-models/xiaomi-redmi-9t-68794884eb674ea2b3cc6cbd1c668b03
+* author:	LanosBeamng (https://sketchfab.com/LanosBeamng)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Xiaomi Redmi 9T" (https://sketchfab.com/3d-models/xiaomi-redmi-9t-68794884eb674ea2b3cc6cbd1c668b03) by LanosBeamng (https://sketchfab.com/LanosBeamng) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

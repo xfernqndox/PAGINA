@@ -6,6 +6,7 @@
     "precio": 4299.0,
     "precioOferta": 3899.0,
     "imagen": "img/productos/13.jpg",
+    "modelo3D": "",
     "descripcion":
       "Delgada, ligera y con una batería de larga duración gracias al chip M1, ideal para el día a día y estudiantes.",
     "especificaciones": {
@@ -25,6 +26,7 @@
     "precio": 6299.0,
     "precioOferta": 5799.0,
     "imagen": "img/productos/15.jpg",
+    "modelo3D": "",
     "descripcion":
       "Pantalla amplia de 15 pulgadas en un diseño ultradelgado, impulsada por el potente y eficiente chip M3.",
     "especificaciones": {
@@ -44,6 +46,7 @@
     "precio": 8999.0,
     "precioOferta": 8299.0,
     "imagen": "img/productos/14.jpg",
+    "modelo3D": "",
     "descripcion":
       "Rendimiento extremo para profesionales exigentes, con pantalla Liquid Retina XDR de 120 Hz y máxima conectividad.",
     "especificaciones": {
@@ -63,6 +66,7 @@
   "precio": 2999.0,
   "precioOferta": 2599.0,
   "imagen": "img/productos/hp-omnibook-14.jpg",
+  "modelo3D": "",
   "descripcion":
     "Laptop HP OmniBook con procesador Intel Core 5, pantalla de 14\" 2K y gran duración de batería",
   "especificaciones": {
@@ -82,6 +86,7 @@
   "precio": 3699.0,
   "precioOferta": 3199.0,
   "imagen": "img/productos/hp-victus.jpg",
+  "modelo3D": "",
   "descripcion":
     "Laptop gamer HP Victus con procesador AMD Ryzen 7 7000 Series y gráfica NVIDIA GeForce RTX 4050",
   "especificaciones": {
@@ -100,6 +105,7 @@
   "precio": 4199.0,
   "precioOferta": 3799.0,
   "imagen": "img/productos/hp-omnibook-ia.jpg",
+  "modelo3D": "",
   "descripcion":
     "Laptop convertible HP OmniBook IA con procesador AMD Ryzen AI 7, pantalla táctil 14\" 2K OLED e incluye lápiz",
   "especificaciones": {
@@ -118,6 +124,7 @@
   "precio": 4299.0,
   "precioOferta": 3899.0,
   "imagen": "img/productos/lenovo-yoga-ai.jpg",
+  "modelo3D": "",
   "descripcion":
     "Laptop 2 en 1 Lenovo Copilot+ PC con certificación militar MIL-STD-810H, procesador AMD Ryzen AI 7 350 y pantalla táctil WUXGA",
   "especificaciones": {
@@ -137,6 +144,7 @@
   "precio": 4499.0,
   "precioOferta": 3999.0,
   "imagen": "img/productos/acer-nitro.jpg",
+  "modelo3D": "",
   "descripcion":
     "Laptop gamer Acer Nitro con pantalla IPS de 165Hz, procesador AMD Ryzen AI 7 y tarjeta gráfica NVIDIA GeForce RTX 5050 de 8GB",
   "especificaciones": {
@@ -156,6 +164,7 @@
   "precio": 5299.0,
   "precioOferta": 4799.0,
   "imagen": "img/productos/hp-omnibook-ia-r9.jpg",
+  "modelo3D": "",
   "descripcion":
     "Laptop HP OmniBook IA de alta gama con procesador AMD Ryzen AI 9 HX, pantalla de 14\" 2.2K y hasta 22 horas de batería",
   "especificaciones": {
@@ -194,8 +203,8 @@
     "precio": 2299.0,
     "precioOferta": null,
     "imagen": "img/productos/15pro.jpg",
-    "descripcion":
-      "Diseño de titanio, puerto USB-C y zoom óptico de 5x",
+    "modelo3D": "",
+    "descripcion": "Diseño de titanio, puerto USB-C y zoom óptico de 5x",
     "especificaciones": {
       "Pantalla": "6.7\" Super Retina XDR OLED 120 Hz",
       "Procesador": "Apple A17 Pro",
@@ -213,6 +222,7 @@
     "precio": 3789.99,
     "precioOferta": null,
     "imagen": "img/productos/16max.jpg",
+    "modelo3D": "",
     "descripcion":
       "Pantalla gigante de 6.9 pulgadas, Botón Control de Cámara y Apple Intelligence",
     "especificaciones": {
@@ -233,6 +243,7 @@
     "precio": 5089.99,
     "precioOferta": null,
     "imagen": "img/productos/17pro.jpg",
+    "modelo3D": "",
     "descripcion":
       "Máxima potencia con 12 GB de RAM, conectividad avanzada y chip N1",
     "especificaciones": {
@@ -252,6 +263,7 @@
   "precio": 1499.0,
   "precioOferta": 1299.0,
   "imagen": "",
+  "modelo3D": "",
   "descripcion":
     "Genio de la AI con 24(8+16)GB de RAM, 512GB de almacenamiento y diseño unibody forjado en metal",
   "especificaciones": {
@@ -271,6 +283,7 @@
   "precio": 899.0,
   "precioOferta": 749.0,
   "imagen": "",
+  "modelo3D": "",
   "descripcion":
     "Diseño moderno en color negro con módulo de doble cámara trasera en anillos verticales",
   "especificaciones": {
@@ -290,6 +303,7 @@
   "precio": 2199.0,
   "precioOferta": 1899.0,
   "imagen": "",
+  "modelo3D": "",
   "descripcion":
     "Cámara AI de 200MP, gran batería de 7000mAh y funciones de Imagen a video AI 2.0",
   "especificaciones": {
@@ -309,6 +323,7 @@
   "precio": 2999.0,
   "precioOferta": 2599.0,
   "imagen": "",
+  "modelo3D": "",
   "descripcion":
     "Experiencia de gaming avanzada con procesador Exynos 2400 y funciones de Galaxy AI",
   "especificaciones": {
@@ -328,6 +343,7 @@
   "precio": 4999.0,
   "precioOferta": 4499.0,
   "imagen": "",
+  "modelo3D": "",
   "descripcion":
     "Nightography avanzado con 200 MP, mayor privacidad en pantalla y asistente de fotos con Galaxy AI",
   "especificaciones": {
@@ -347,6 +363,7 @@
     "precio": 1899.0,
     "precioOferta": 1699.0,
     "imagen": "img/productos/rtx-ti.jpg",
+    "modelo3D": "",
     "descripcion":
       "Ideal para gaming en 1080p y 1440p con tecnología de generación de fotogramas.",
     "especificaciones": {
@@ -365,6 +382,7 @@
     "precio": 649.0,
     "precioOferta": null,
     "imagen": "img/productos/ryzen-5.jpg",
+    "modelo3D": "",
     "descripcion":
       "6 núcleos y 12 hilos para gaming y multitarea, compatible con placas AM4.",
     "especificaciones": {
@@ -383,6 +401,7 @@
     "precio": 189.0,
     "precioOferta": 159.0,
     "imagen": "img/productos/ram.jpg",
+    "modelo3D": "",
     "descripcion":
       "Kit de memoria con disipador de calor para mayor estabilidad en tareas exigentes.",
     "especificaciones": {
@@ -401,6 +420,7 @@
   "precio": 249.0,
   "precioOferta": 199.0,
   "imagen": "",
+  "modelo3D": "",
   "descripcion":
     "Unidad de estado sólido M.2 NVMe PCIe Gen3x4 de alta velocidad con lámina de cobre térmico de alta eficiencia",
   "especificaciones": {
@@ -419,6 +439,7 @@
   "precio": 329.0,
   "precioOferta": 289.0,
   "imagen": "",
+  "modelo3D": "",
   "descripcion": "Placa base micro-ATX Ultra Durable con soporte para procesadores AMD Ryzen/Athlon, ranura M.2 NVMe PCIe Gen3 y memoria DDR4.",
   "especificaciones": {
     "Factor de forma": "Micro-ATX",
@@ -434,6 +455,7 @@
     "precio": 1499.0,
     "precioOferta": 1299.0,
     "imagen": "",
+    "modelo3D": "",
     "descripcion": "Tarjeta gráfica PNY GeForce RTX 5050 con diseño de doble ventilador, 8GB GDDR6 y tecnología Stealth Mode",
     "especificaciones": {
       "Memoria": "8 GB GDDR6",
@@ -449,6 +471,7 @@
     "precio": 1899.0,
     "precioOferta": 1699.0,
     "imagen": "",
+    "modelo3D": "",
     "descripcion": "Tarjeta gráfica PNY GeForce RTX 5060 Ti Overclocked con 8GB GDDR7 y doble ventilador",
     "especificaciones": {
       "Memoria": "8 GB GDDR7",
@@ -464,6 +487,7 @@
     "precio": 2099.0,
     "precioOferta": 1899.0,
     "imagen": "",
+    "modelo3D": "",
     "descripcion": "Tarjeta gráfica PNY GeForce RTX 5060 Ti con iluminación Epic-X RGB y sistema de tres ventiladores",
     "especificaciones": {
       "Memoria": "8 GB GDDR7",
@@ -479,6 +503,7 @@
     "precio": 2399.0,
     "precioOferta": 2199.0,
     "imagen": "",
+    "modelo3D": "",
     "descripcion": "Tarjeta gráfica PNY GeForce RTX 5060 Ti de alta capacidad con 16GB GDDR7 y doble ventilador",
     "especificaciones": {
       "Memoria": "16 GB GDDR7",
@@ -494,6 +519,7 @@
     "precio": 1699.0,
     "precioOferta": 1499.0,
     "imagen": "",
+    "modelo3D": "",
     "descripcion": "Tarjeta gráfica PNY GeForce RTX 5060 con 8GB GDDR7, overclock de fábrica y doble ventilador",
     "especificaciones": {
       "Memoria": "8 GB GDDR7",
@@ -509,6 +535,7 @@
     "precio": 799.0,
     "precioOferta": 649.0,
     "imagen": "",
+    "modelo3D": "",
     "descripcion": "Tarjeta gráfica MSI GeForce GTX 1050 Ti Gaming X con 4GB de memoria y sistema Twin Frozr VI",
     "especificaciones": {
       "Memoria": "4 GB",
@@ -523,6 +550,7 @@
     "precio": 999.0,
     "precioOferta": 849.0,
     "imagen": "",
+    "modelo3D": "",
     "descripcion": "Tarjeta gráfica EVGA GeForce GTX 1660 Super SC Ultra con diseño de doble ventilador y arquitectura Turing",
     "especificaciones": {
       "Memoria": "GDDR6",
@@ -538,6 +566,7 @@
     "precio": 259.0,
     "precioOferta": 199.0,
     "imagen": "img/productos/fiddler.jpg",
+    "modelo3D": "",
     "descripcion":
       "Switches azules, iluminación RGB personalizable y estructura resistente.",
     "especificaciones": {
@@ -557,6 +586,7 @@
     "precio": 189.0,
     "precioOferta": 149.0,
     "imagen": "img/productos/k552.jpg",
+    "modelo3D": "",
     "descripcion": "Diseño compacto TKL sin teclado numérico, switches mecánicos y retroiluminación RGB vívida",
     "especificaciones": {
       "Tipo": "Mecánico TKL",
@@ -575,6 +605,7 @@
     "precio": 549.0,
     "precioOferta": 489.0,
     "imagen": "img/productos/6pro.jpg",
+    "modelo3D": "",
     "descripcion": "Diseñado para profesionales de esports con switches intercambiables y perfil compacto",
     "especificaciones": {
       "Tipo": "Mecánico Pro TKL",
@@ -593,6 +624,7 @@
    "precio": 79.0,
    "precioOferta": null,
    "imagen": "img/productos/mouse.jpg",
+   "modelo3D": "",
    "descripcion":
     "Disfruta de la misma sensación de clic pero un 90% menos de ruido, diseño compacto y seguimiento óptico avanzado.",
    "especificaciones": {
@@ -610,6 +642,7 @@
     "precio": 399.0,
     "precioOferta": 329.0,
     "imagen": "img/productos/auri.jpg",
+    "modelo3D": "",
     "descripcion":
       "Cancelación activa de ruido, sonido envolvente y hasta 30 horas de reproducción.",
     "especificaciones": {
@@ -629,6 +662,7 @@
     "precio": 629.0,
     "precioOferta": 579.0,
     "imagen": "img/productos/mouse-pro.jpg",
+    "modelo3D": "",
     "descripcion": "Ultraligero de rendimiento superior con tecnología inalámbrica LIGHTSPEED y sensor HERO 2",
     "especificaciones": {
       "Tipo": "Mouse inalámbrico gaming",
@@ -647,6 +681,7 @@
     "precio": 399.0,
     "precioOferta": 349.0,
     "imagen": "",
+    "modelo3D": "",
     "descripcion": "Teclado mecánico inalámbrico con diseño personalizado en tonos blancos, rojos y naranjas, iluminación RGB, pantalla inteligente integrada y botones multimedia dedicados.",
     "especificaciones": {
       "Conectividad": "Inalámbrico 2.4GHz, Bluetooth y Cable",
@@ -661,6 +696,7 @@
     "precio": 149.0,
     "precioOferta": 119.0,
     "imagen": "",
+    "modelo3D": "",
     "descripcion": "Auriculares inalámbricos deportivos con estuche de carga inteligente fabricado en material ABS y visor digital de batería.",
     "especificaciones": {
       "Material": "ABS",
@@ -674,6 +710,7 @@
     "precio": 399.0,
     "precioOferta": 349.0,
     "imagen": "",
+    "modelo3D": "",
     "descripcion": "Teclado mecánico con estructura Gasket, pantalla inteligente, sistema de conexión de 3 modos y perilla metálica superior en tonos azulados.",
     "especificaciones": {
       "Estructura": "Gasket structure",
@@ -688,6 +725,7 @@
     "precio": 99.0,
     "precioOferta": 79.0,
     "imagen": "",
+    "modelo3D": "",
     "descripcion": "Teclado con cable para gaming, chasis angular de diseño robusto en color negro y retroiluminación LED azul.",
     "especificaciones": {
       "Tipo": "Membrana con cable",
@@ -702,6 +740,7 @@
     "precio": 1899.0,
     "precioOferta": null,
     "imagen": "img/productos/pantalla245.jpg",
+    "modelo3D": "",
     "descripcion":
       "Pantalla rápida de 24.5 pulgadas diseñada para esports y máxima fluidez competitiva",
     "especificaciones": {
@@ -720,6 +759,7 @@
     "precio": 3299.0,
     "precioOferta": 1099.0,
     "imagen": "img/productos/pulgas27.jpg",
+    "modelo3D": "",
     "descripcion":
       "Calidad visual superior con panel OLED brillante y negros absolutos para gaming avanzado",
     "especificaciones": {
@@ -738,6 +778,7 @@
     "precio": 6299.0,
     "precioOferta": null,
     "imagen": "img/productos/monitorasus.jpg",
+    "modelo3D": "",
     "descripcion":
       "Inmersión total ultra panorámica con tecnología OLED y alta velocidad de refresco",
     "especificaciones": {
@@ -756,6 +797,7 @@
     "precio": 576.0,
     "precioOferta": null,
     "imagen": "",
+    "modelo3D": "",
     "descripcion":
       "Inmersión total ultra panorámica con tecnología OLED y alta velocidad de refresco",
     "especificaciones": {
@@ -774,6 +816,7 @@
     "precio": 768.0,
     "precioOferta": null,
     "imagen": "",
+    "modelo3D": "",
     "descripcion":
       "Pantalla ultra ancha de 34 UWQHD (180Hz / 1ms) con panel VA curvo, ideal para gaming inmersivo y multitarea",
     "especificaciones": {
@@ -792,6 +835,7 @@
     "precio": 890.0,
     "precioOferta": null,
     "imagen": "",
+    "modelo3D": "",
     "descripcion":
       "Monitor curvo gaming de 34\" UWQHD (3440x1440), panel VA, 180Hz, 1ms, HDR10 y FreeSync Premium",
     "especificaciones": {
@@ -810,6 +854,7 @@
     "precio": 490.0,
     "precioOferta": null,
     "imagen": "",
+    "modelo3D": "",
    " descripcion":
       "Monitor curvo de 31.5 QHD panel VA 75Hz 1ms y FreeSync Ideal para oficina y gaming casual",
    " especificaciones": {
@@ -821,4 +866,4 @@
       "Puertos": "2x HDMI, 1x DisplayPort, USB-C (90W)"
     }
   }
-  ]
+]

@@ -408,8 +408,7 @@ table thead th {
     font-family: var(--font-tech);
 }
 
-/* ===== CORRECCIÓN DE TEXTOS OSCURO/ILEGIBLES EN CONTACTO Y RECLAMACIONES ===== */
-/* Textos descriptivos universales */
+
 
 small,
 .text-muted {

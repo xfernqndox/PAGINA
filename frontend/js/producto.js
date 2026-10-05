@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       auto-rotate
       camera-orbit="0deg 75deg 105%"
       shadow-intensity="1" 
-      style="width: 100%; height: 400px; background-color: #cbe0ec7f; border-radius: 12px; border: 1px solid #202c33;">
+      style="width: 100%; height: 400px; background-color: #65657a28; border-radius: 12px; border: 4px solid #19437ad8;">
     </model-viewer>
     <p class="text-center text-muted small mt-2">✨ Usa el mouse para girar el producto en 360°</p>
   `;

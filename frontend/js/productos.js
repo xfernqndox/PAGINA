@@ -7,11 +7,12 @@ const PRODUCTOS = [
   // ---------------------- LAPTOPS ----------------------
   {
     id: 1,
-    nombre: "MacBook Air 13\" M1",
+    nombre: "HP 200 G2a 16 inch Notebook PC",
     categoria: "Laptops",
     precio: 4299.0,
     precioOferta: 3899.0,
-    imagen: "img/productos/13.jpg",
+    imagen: "img/productos_estatic/latop/hp_299.png",
+    modelo3D: "img/modelos/laptots/hp_laptop/scene.gltf",
     descripcion:
       "Delgada, ligera y con una batería de larga duración gracias al chip M1, ideal para el día a día y estudiantes.",
     especificaciones: {
@@ -26,11 +27,12 @@ const PRODUCTOS = [
   },
   {
     id: 2,
-    nombre: "MacBook Air 15\" M3",
+    nombre: "Laptop Legend 5",
     categoria: "Laptops",
     precio: 6299.0,
     precioOferta: 5799.0,
-    imagen: "img/productos/15.jpg",
+    imagen: "img/productos_estatic/latop/legio5.png",
+    modelo3D: "img/modelos/laptots/legend_5/scene.gltf",
     descripcion:
       "Pantalla amplia de 15 pulgadas en un diseño ultradelgado, impulsada por el potente y eficiente chip M3.",
     especificaciones: {
@@ -45,11 +47,12 @@ const PRODUCTOS = [
   },
   {
     id: 3,
-    nombre: "MacBook Pro 14\" M3 Pro",
+    nombre: "MackBoock M3 Pro",
     categoria: "Laptops",
     precio: 8999.0,
     precioOferta: 8299.0,
-    imagen: "img/productos/14.jpg",
+    imagen: "img/productos_estatic/latop/mack_3m.png",
+    modelo3D: "img/modelos/laptots/macbook_pro_/scene.gltf",
     descripcion:
       "Rendimiento extremo para profesionales exigentes, con pantalla Liquid Retina XDR de 120 Hz y máxima conectividad.",
     especificaciones: {
@@ -63,126 +66,132 @@ const PRODUCTOS = [
     }
   },
   {
-  id: 4,
-  nombre: "HP OmniBook 14\"",
-  categoria: "Laptops",
-  precio: 2999.0,
-  precioOferta: 2599.0,
-  imagen: "img/productos/hp-omnibook-14.jpg",
-  descripcion:
-    "Laptop HP OmniBook con procesador Intel Core 5, pantalla de 14\" 2K y gran duración de batería",
-  especificaciones: {
-    Pantalla: "14\" 2K",
-    Procesador: "Intel Core 5",
-    "Memoria RAM": "8 GB",
-    Almacenamiento: "512 GB SSD",
-    "Cámara principal": "HD",
-    Batería: "Más batería",
-    "Sistema operativo": "Windows 11"
-  }
-},
-{
-  id: 5,
-  nombre: "HP Victus 15.6\"",
-  categoria: "Laptops",
-  precio: 3699.0,
-  precioOferta: 3199.0,
-  imagen: "img/productos/hp-victus.jpg",
-  descripcion:
-    "Laptop gamer HP Victus con procesador AMD Ryzen 7 7000 Series y gráfica NVIDIA GeForce RTX 4050",
-  especificaciones: {
-    Pantalla: "15.6\" FHD",
-    Procesador: "AMD Ryzen 7 7000 Series",
-    "Memoria RAM": "8 GB",
-    Almacenamiento: "512 GB SSD",
-    "Tarjeta gráfica": "NVIDIA GeForce RTX 4050",
-    "Sistema operativo": "Windows 11"
-  }
-},
-{
-  id: 6,
-  nombre: "HP OmniBook IA 14\"",
-  categoria: "Laptops",
-  precio: 4199.0,
-  precioOferta: 3799.0,
-  imagen: "img/productos/hp-omnibook-ia.jpg",
-  descripcion:
-    "Laptop convertible HP OmniBook IA con procesador AMD Ryzen AI 7, pantalla táctil 14\" 2K OLED e incluye lápiz",
-  especificaciones: {
-    Pantalla: "14\" 2K OLED táctil",
-    Procesador: "AMD Ryzen AI 7 con gráficos AMD Radeon",
-    "Memoria RAM": "16 GB",
-    Almacenamiento: "512 GB SSD",
-    Accesorios: "Incluye lápiz óptico",
-    "Sistema operativo": "Windows 11"
-  }
-},
-{
-  id: 7,
-  nombre: "Lenovo Yoga Copilot+ PC",
-  categoria: "Laptops",
-  precio: 4299.0,
-  precioOferta: 3899.0,
-  imagen: "img/productos/lenovo-yoga-ai.jpg",
-  descripcion:
-    "Laptop 2 en 1 Lenovo Copilot+ PC con certificación militar MIL-STD-810H, procesador AMD Ryzen AI 7 350 y pantalla táctil WUXGA",
-  especificaciones: {
-    Pantalla: "14\" WUXGA táctil",
-    Procesador: "AMD Ryzen AI 7 350 con gráficos AMD Radeon",
-    "Memoria RAM": "16 GB",
-    Almacenamiento: "512 GB SSD",
-    Certificación: "MIL-STD-810H (Reliability Tested)",
-    Accesorios: "Incluye lápiz sin batería",
-    "Sistema operativo": "Windows 11 Copilot+ PC"
-  }
-},
-{
-  id: 8,
-  nombre: "Acer Nitro 15.6\"",
-  categoria: "Laptops",
-  precio: 4499.0,
-  precioOferta: 3999.0,
-  imagen: "img/productos/acer-nitro.jpg",
-  descripcion:
-    "Laptop gamer Acer Nitro con pantalla IPS de 165Hz, procesador AMD Ryzen AI 7 y tarjeta gráfica NVIDIA GeForce RTX 5050 de 8GB",
-  especificaciones: {
-    Pantalla: "15.6\" FHD IPS 165Hz",
-    Procesador: "AMD Ryzen AI 7",
-    "Memoria RAM": "16 GB",
-    Almacenamiento: "512 GB SSD",
-    "Tarjeta gráfica": "NVIDIA GeForce RTX 5050 8GB",
-    Conectividad: "Wi-Fi 6E, Doble Ventilación, Teclado Retroiluminado",
-    "Sistema operativo": "Windows 11"
-  }
-},
-{
-  id: 9,
-  nombre: "HP OmniBook IA 14\" (Ryzen 9)",
-  categoria: "Laptops",
-  precio: 5299.0,
-  precioOferta: 4799.0,
-  imagen: "img/productos/hp-omnibook-ia-r9.jpg",
-  descripcion:
-    "Laptop HP OmniBook IA de alta gama con procesador AMD Ryzen AI 9 HX, pantalla de 14\" 2.2K y hasta 22 horas de batería",
-  especificaciones: {
-    Pantalla: "14\" 2.2K táctil",
-    Procesador: "AMD Ryzen AI 9 HX con gráficos AMD Radeon",
-    "Memoria RAM": "32 GB",
-    Almacenamiento: "1 TB SSD",
-    Batería: "Hasta 22 horas",
-    "Sistema operativo": "Windows 11"
-  }
-},
+    id: 4,
+    nombre: "Laptop Lenovo Legion",
+    categoria: "Laptops",
+    precio: 2999.0,
+    precioOferta: 2599.0,
+    imagen: "img/productos_estatic/latop/legend.png",
+    modelo3D: "img/modelos/laptots/lenovo_lap/scene.gltf",
+    descripcion:
+      "Laptop HP OmniBook con procesador Intel Core 5, pantalla de 14\" 2K y gran duración de batería",
+    especificaciones: {
+      Pantalla: "14\" 2K",
+      Procesador: "Intel Core 5",
+      "Memoria RAM": "8 GB",
+      Almacenamiento: "512 GB SSD",
+      "Cámara principal": "HD",
+      Batería: "Más batería",
+      "Sistema operativo": "Windows 11"
+    }
+  },
+  {
+    id: 5,
+    nombre: "Laptop Gamer HP Victus",
+    categoria: "Laptops",
+    precio: 3699.0,
+    precioOferta: 3199.0,
+    imagen: "img/productos_estatic/latop/hp_victus.png",
+    modelo3D: "img/modelos/laptots/hp_victus/scene.gltf",
+    descripcion:
+      "Laptop gamer HP Victus con procesador AMD Ryzen 7 7000 Series y gráfica NVIDIA GeForce RTX 4050",
+    especificaciones: {
+      Pantalla: "15.6\" FHD",
+      Procesador: "AMD Ryzen 7 7000 Series",
+      "Memoria RAM": "8 GB",
+      Almacenamiento: "512 GB SSD",
+      "Tarjeta gráfica": "NVIDIA GeForce RTX 4050",
+      "Sistema operativo": "Windows 11"
+    }
+  },
+  {
+    id: 6,
+    nombre: "Laptop Asus ROG Zephyrus G15",
+    categoria: "Laptops",
+    precio: 4199.0,
+    precioOferta: 3799.0,
+    imagen: "img/productos_estatic/latop/asus.png",
+    modelo3D: "img/modelos/laptots/lap_Asus/scene.gltf",
+    descripcion:
+      "Samsung Galaxy Book Pro 360 IA con procesador AMD Ryzen AI 7, pantalla táctil 14\" 2K OLED e incluye lápiz",
+    especificaciones: {
+      Pantalla: "14\" 2K OLED táctil",
+      Procesador: "AMD Ryzen AI 7 con gráficos AMD Radeon",
+      "Memoria RAM": "16 GB",
+      Almacenamiento: "512 GB SSD",
+      Accesorios: "Incluye lápiz óptico",
+      "Sistema operativo": "Windows 11"
+    }
+  },
+
+  {
+    id: 7,
+    nombre: "Laptop 2 en 1 Lenovo",
+    categoria: "Laptops",
+    precio: 4299.0,
+    precioOferta: 3899.0,
+    imagen: "img/productos_estatic/latop/lenovo_duo.png",
+    modelo3D: "img/modelos/laptots/lenovo_duo/scene.gltf",
+    descripcion:
+      "Laptop 2 en 1 Lenovo Copilot+ PC con certificación militar MIL-STD-810H, procesador AMD Ryzen AI 7 350 y pantalla táctil WUXGA",
+    especificaciones: {
+      Pantalla: "14\" WUXGA táctil",
+      Procesador: "AMD Ryzen AI 7 350 con gráficos AMD Radeon",
+      "Memoria RAM": "16 GB",
+      Almacenamiento: "512 GB SSD",
+      Certificación: "MIL-STD-810H (Reliability Tested)",
+      Accesorios: "Incluye lápiz sin batería",
+      "Sistema operativo": "Windows 11 Copilot+ PC"
+    }
+  },
+  {
+    id: 8,
+    nombre: "Laptop gamer Acer Nitro",
+    categoria: "Laptops",
+    precio: 4499.0,
+    precioOferta: 3999.0,
+    imagen: "img/productos_estatic/latop/acer.png",
+    modelo3D: "img/modelos/laptots/acerg/scene.gltf",
+    descripcion:
+      "Laptop gamer Acer Nitro con pantalla IPS de 165Hz, procesador AMD Ryzen AI 7 y tarjeta gráfica NVIDIA GeForce RTX 5050 de 8GB",
+    especificaciones: {
+      Pantalla: "15.6\" FHD IPS 165Hz",
+      Procesador: "AMD Ryzen AI 7",
+      "Memoria RAM": "16 GB",
+      Almacenamiento: "512 GB SSD",
+      "Tarjeta gráfica": "NVIDIA GeForce RTX 5050 8GB",
+      Conectividad: "Wi-Fi 6E, Doble Ventilación, Teclado Retroiluminado",
+      "Sistema operativo": "Windows 11"
+    }
+  },
+  {
+    id: 9,
+    nombre: "Asus ROG Zephyrus Duo 16",
+    categoria: "Laptops",
+    precio: 5299.0,
+    precioOferta: 4799.0,
+    imagen: "img/productos_estatic/latop/asus_16.png",
+    modelo3D: "img/modelos/laptots/asus_16l/scene.gltf",
+    descripcion:
+      "Laptop HP OmniBook IA de alta gama con procesador AMD Ryzen AI 9 HX, pantalla de 14\" 2.2K y hasta 22 horas de batería",
+    especificaciones: {
+      Pantalla: "14\" 2.2K táctil",
+      Procesador: "AMD Ryzen AI 9 HX con gráficos AMD Radeon",
+      "Memoria RAM": "32 GB",
+      Almacenamiento: "1 TB SSD",
+      Batería: "Hasta 22 horas",
+      "Sistema operativo": "Windows 11"
+    }
+  },
 
   // ---------------------- CELULARES ----------------------
   {
     id: 10,
-    nombre: "iPhone 14 Pro Max",
-
+    nombre: "iPhone 14 Pro ",
     categoria: "Celulares",
     precio: 1899.0,
     precioOferta: 1550.0,
-    imagen: "img/productos_estatic/14_pro.jpg",
+    imagen: "img/productos_estatic/celular/14_pro.jpg",
     modelo3D: "img/modelos/celulares/iphone_14_pro/scene.gltf",
     descripcion:
       "Pantalla ProMotion de 6.7 pulgadas, Dynamic Island y chip A16 Bionic",
@@ -198,11 +207,12 @@ const PRODUCTOS = [
   },
   {
     id: 11,
-    nombre: "iPhone 15 Pro Max",
+    nombre: "iPhone 16 Pro Max",
     categoria: "Celulares",
     precio: 2299.0,
     precioOferta: null,
-    imagen: "img/productos/15pro.jpg",
+    imagen: "img/productos_estatic/celular/16.png",
+    modelo3D: "img/modelos/celulares/iphone_16_pro_max/scene.gltf",
     descripcion:
       "Diseño de titanio, puerto USB-C y zoom óptico de 5x",
     especificaciones: {
@@ -217,11 +227,12 @@ const PRODUCTOS = [
   },
   {
     id: 12,
-    nombre: "iPhone 16 Pro Max",
+    nombre: "Huawei P40 Pro",
     categoria: "Celulares",
     precio: 3789.99,
     precioOferta: null,
-    imagen: "img/productos/16max.jpg",
+    imagen: "img/productos_estatic/celular/h.png",
+    modelo3D: "img/modelos/celulares/huawei_p40_pro/scene.gltf",
     descripcion:
       "Pantalla gigante de 6.9 pulgadas, Botón Control de Cámara y Apple Intelligence",
     especificaciones: {
@@ -237,11 +248,12 @@ const PRODUCTOS = [
 
   {
     id: 13,
-    nombre: "iPhone 17 Pro Max",
+    nombre: "Oppo Reno 8 Pro",
     categoria: "Celulares",
     precio: 5089.99,
     precioOferta: null,
-    imagen: "img/productos/17pro.jpg",
+    imagen: "img/productos_estatic/celular/8.png",
+    modelo3D: "img/modelos/celulares/oppo_reno_8_pro/scene.gltf",
     descripcion:
       "Máxima potencia con 12 GB de RAM, conectividad avanzada y chip N1",
     especificaciones: {
@@ -255,109 +267,115 @@ const PRODUCTOS = [
     }
   },
   {
-  id: 14,
-  nombre: "Honor 600e 5G",
-  categoria: "Celulares",
-  precio: 1499.0,
-  precioOferta: 1299.0,
-  imagen: "",
-  descripcion:
-    "Genio de la AI con 24(8+16)GB de RAM, 512GB de almacenamiento y diseño unibody forjado en metal",
-  especificaciones: {
-    Pantalla: "Resistencia al agua y caídas",
-    Procesador: "AI integrado",
-    "Memoria RAM": "24 (8 + 16) GB",
-    Almacenamiento: "512 GB",
-    "Cámara principal": "Alta resolución con Imagen a video AI 2.0",
-    Garantía: "365 días de protección de pantalla y posterior + 1 año",
-    "Sistema operativo": "Android con IA"
-  }
-},
-{
-  id: 15,
-  nombre: "Honor X7e",
-  categoria: "Celulares",
-  precio: 899.0,
-  precioOferta: 749.0,
-  imagen: "",
-  descripcion:
-    "Diseño moderno en color negro con módulo de doble cámara trasera en anillos verticales",
-  especificaciones: {
-    Pantalla: "Pantalla táctil de alta definición",
-    Procesador: "Procesador octa-core",
-    "Memoria RAM": "6 GB",
-    Almacenamiento: "128 GB",
-    "Cámara principal": "Doble cámara en anillos verticales",
-    Batería: "Batería de larga duración",
-    "Sistema operativo": "Android"
-  }
-},
-{
-  id: 16,
-  nombre: "Honor 600 Pro 5G",
-  categoria: "Celulares",
-  precio: 2199.0,
-  precioOferta: 1899.0,
-  imagen: "",
-  descripcion:
-    "Cámara AI de 200MP, gran batería de 7000mAh y funciones de Imagen a video AI 2.0",
-  especificaciones: {
-    Pantalla: "Alta definición con bordes curvos",
-    Procesador: "Procesador avanzado 5G",
-    "Memoria RAM": "28 (12 + 16) GB",
-    Almacenamiento: "512 GB",
-    "Cámara principal": "200 MP AI",
-    Batería: "7000 mAh",
-    "Sistema operativo": "Android con IA"
-  }
-},
-{
-  id: 17,
-  nombre: "Samsung Galaxy S25 FE",
-  categoria: "Celulares",
-  precio: 2999.0,
-  precioOferta: 2599.0,
-  imagen: "",
-  descripcion:
-    "Experiencia de gaming avanzada con procesador Exynos 2400 y funciones de Galaxy AI",
-  especificaciones: {
-    Pantalla: "Dynamic AMOLED de alta tasa de refresco",
-    Procesador: "Exynos 2400",
-    "Memoria RAM": "8 GB",
-    Almacenamiento: "256 GB",
-    "Cámara principal": "12 MP",
-    Batería: "4900 mAh",
-    "Sistema operativo": "Android con Galaxy AI"
-  }
-},
-{
-  id: 18,
-  nombre: "Samsung Galaxy S26 Ultra",
-  categoria: "Celulares",
-  precio: 4999.0,
-  precioOferta: 4499.0,
-  imagen: "",
-  descripcion:
-    "Nightography avanzado con 200 MP, mayor privacidad en pantalla y asistente de fotos con Galaxy AI",
-  especificaciones: {
-    Pantalla: "Dynamic AMOLED con mayor privacidad",
-    Procesador: "Procesador Snapdragon / Exynos de última generación",
-    "Memoria RAM": "12 GB",
-    Almacenamiento: "512 GB (Doble almacenamiento sin pagar más)",
-    "Cámara principal": "200 MP",
-    Batería: "Batería de larga duración con carga rápida",
-    "Sistema operativo": "Android con Galaxy AI"
-  }
-},
+    id: 14,
+    nombre: "Samsung Galaxy S22 ultra",
+    categoria: "Celulares",
+    precio: 1499.0,
+    precioOferta: 1299.0,
+    imagen: "img/productos_estatic/celular/22.png",
+    modelo3D: "img/modelos/celulares/samsung_galaxy_s22_ultra/scene.gltf",
+    descripcion:
+      "Genio de la AI con 24(8+16)GB de RAM, 512GB de almacenamiento y diseño unibody forjado en metal",
+    especificaciones: {
+      Pantalla: "Resistencia al agua y caídas",
+      Procesador: "AI integrado",
+      "Memoria RAM": "24 (8 + 16) GB",
+      Almacenamiento: "512 GB",
+      "Cámara principal": "Alta resolución con Imagen a video AI 2.0",
+      Garantía: "365 días de protección de pantalla y posterior + 1 año",
+      "Sistema operativo": "Android con IA"
+    }
+  },
+  {
+    id: 15,
+    nombre: "Samsung Galaxy z Flip 3",
+    categoria: "Celulares",
+    precio: 899.0,
+    precioOferta: 749.0,
+    imagen: "img/productos_estatic/celular/3.png",
+    modelo3D: "img/modelos/celulares/samsung_galaxy_z_flip3/scene.gltf",
+    descripcion:
+      "Diseño moderno en color negro con módulo de doble cámara trasera en anillos verticales",
+    especificaciones: {
+      Pantalla: "Pantalla táctil de alta definición",
+      Procesador: "Procesador octa-core",
+      "Memoria RAM": "6 GB",
+      Almacenamiento: "128 GB",
+      "Cámara principal": "Doble cámara en anillos verticales",
+      Batería: "Batería de larga duración",
+      "Sistema operativo": "Android"
+    }
+  },
+  {
+    id: 16,
+    nombre: "Samsung S26 Ultra",
+    categoria: "Celulares",
+    precio: 2199.0,
+    precioOferta: 1899.0,
+    imagen: "img/productos_estatic/celular/26.png",
+    modelo3D: "img/modelos/celulares/samsung_s26_ultra/scene.gltf",
+    descripcion:
+      "Cámara AI de 200MP, gran batería de 7000mAh y funciones de Imagen a video AI 2.0",
+    especificaciones: {
+      Pantalla: "Alta definición con bordes curvos",
+      Procesador: "Procesador avanzado 5G",
+      "Memoria RAM": "28 (12 + 16) GB",
+      Almacenamiento: "512 GB",
+      "Cámara principal": "200 MP AI",
+      Batería: "7000 mAh",
+      "Sistema operativo": "Android con IA"
+    }
+  },
+  {
+    id: 17,
+    nombre: "Vivo X300 Ultra",
+    categoria: "Celulares",
+    precio: 2999.0,
+    precioOferta: 2599.0,
+    imagen: "img/productos_estatic/celular/x300.png",
+    modelo3D: "img/modelos/celulares/vivo_x300_ultra_black/scene.gltf",
+    descripcion:
+      "Experiencia de gaming avanzada con procesador Exynos 2400 y funciones de Galaxy AI",
+    especificaciones: {
+      Pantalla: "Dynamic AMOLED de alta tasa de refresco",
+      Procesador: "Exynos 2400",
+      "Memoria RAM": "8 GB",
+      Almacenamiento: "256 GB",
+      "Cámara principal": "12 MP",
+      Batería: "4900 mAh",
+      "Sistema operativo": "Android con Galaxy AI"
+    }
+  },
+  {
+    id: 18,
+    nombre: "Xiamoi Redmi 9T",
+    categoria: "Celulares",
+    precio: 4999.0,
+    precioOferta: 4499.0,
+    imagen: "img/productos_estatic/celular/9t.png",
+    modelo3D: "img/modelos/celulares/xiaomi_redmi_9t/scene.gltf",
+    descripcion:
+      "Nightography avanzado con 200 MP, mayor privacidad en pantalla y asistente de fotos con Galaxy AI",
+    especificaciones: {
+      Pantalla: "Dynamic AMOLED con mayor privacidad",
+      Procesador: "Procesador Snapdragon / Exynos de última generación",
+      "Memoria RAM": "12 GB",
+      Almacenamiento: "512 GB (Doble almacenamiento sin pagar más)",
+      "Cámara principal": "200 MP",
+      Batería: "Batería de larga duración con carga rápida",
+      "Sistema operativo": "Android con Galaxy AI"
+    }
+  },
 
   // ---------------------- COMPONENTES ----------------------
   {
     id: 19,
-    nombre: "Tarjeta de Video RTX 4060 Ti 8GB",
+    nombre: "MSI GeForce RTX 3080 Gaming X Trio",
     categoria: "Componentes",
     precio: 1899.0,
     precioOferta: 1699.0,
-    imagen: "img/productos/rtx-ti.jpg",
+    imagen: "img/productos_estatic/componente/3080.png",
+    modelo3D: "img/modelos/componentes/3080/scene.gltf",
     descripcion:
       "Ideal para gaming en 1080p y 1440p con tecnología de generación de fotogramas.",
     especificaciones: {
@@ -371,11 +389,12 @@ const PRODUCTOS = [
   },
   {
     id: 20,
-    nombre: "Procesador Ryzen 5 5600X",
+    nombre: "Rog Strix x370-f Motherboard",
     categoria: "Componentes",
     precio: 649.0,
     precioOferta: null,
-    imagen: "img/productos/ryzen-5.jpg",
+    imagen: "img/productos_estatic/componente/370.png",
+    modelo3D: "img/modelos/componentes/370/scene.gltf",
     descripcion:
       "6 núcleos y 12 hilos para gaming y multitarea, compatible con placas AM4.",
     especificaciones: {
@@ -389,11 +408,12 @@ const PRODUCTOS = [
   },
   {
     id: 21,
-    nombre: "Memoria RAM 16GB DDR4 3200MHz",
+    nombre: "Memoria RAM XPG D41",
     categoria: "Componentes",
     precio: 189.0,
     precioOferta: 159.0,
-    imagen: "img/productos/ram.jpg",
+    imagen: "img/productos_estatic/componente/41.png",
+    modelo3D: "img/modelos/componentes/41/scene.gltf",
     descripcion:
       "Kit de memoria con disipador de calor para mayor estabilidad en tareas exigentes.",
     especificaciones: {
@@ -406,45 +426,48 @@ const PRODUCTOS = [
     }
   },
   {
-  id: 22,
-  nombre: "SSD M.2 NVMe PCIe Gen3x4 AVDETY",
-  categoria: "Componentes",
-  precio: 249.0,
-  precioOferta: 199.0,
-  imagen: "",
-  descripcion:
-    "Unidad de estado sólido M.2 NVMe PCIe Gen3x4 de alta velocidad con lámina de cobre térmico de alta eficiencia",
-  especificaciones: {
-    "Factor de forma": "M.2 2280 NVMe M-key",
-    Interfaz: "PCIe Gen3x4",
-    Velocidad: "Lectura hasta 3500 MB/s, Escritura hasta 3000 MB/s",
-    Disipación: "Lámina de cobre térmico de alta eficiencia",
-    Compatibilidad: "Portátiles, computadoras de escritorio, PC todo en uno y carcasa para SSD",
-    "Sistema operativo": "Compatible con Windows y otros sistemas operativos estándar"
-  }
-},
+    id: 22,
+    nombre: "MSI B550 Gaming Plus",
+    categoria: "Componentes",
+    precio: 249.0,
+    precioOferta: 199.0,
+    imagen: "img/productos_estatic/componente/b5.png",
+    modelo3D: "img/modelos/componentes/b5/scene.gltf",
+    descripcion:
+      "Unidad de estado sólido M.2 NVMe PCIe Gen3x4 de alta velocidad con lámina de cobre térmico de alta eficiencia",
+    especificaciones: {
+      "Factor de forma": "M.2 2280 NVMe M-key",
+      Interfaz: "PCIe Gen3x4",
+      Velocidad: "Lectura hasta 3500 MB/s, Escritura hasta 3000 MB/s",
+      Disipación: "Lámina de cobre térmico de alta eficiencia",
+      Compatibilidad: "Portátiles, computadoras de escritorio, PC todo en uno y carcasa para SSD",
+      "Sistema operativo": "Compatible con Windows y otros sistemas operativos estándar"
+    }
+  },
   {
-  id: 23,
-  nombre: "Placa Madre Gigabyte A320M-S2H",
-  categoria: "Componentes",
-  precio: 329.0,
-  precioOferta: 289.0,
-  imagen: "",
-  descripcion: "Placa base micro-ATX Ultra Durable con soporte para procesadores AMD Ryzen/Athlon, ranura M.2 NVMe PCIe Gen3 y memoria DDR4.",
-  especificaciones: {
-    "Factor de forma": "Micro-ATX",
-    Socket: "AM4",
-    Almacenamiento: "M.2 NVMe PCIe Gen3 x4",
-    "Memoria RAM": "DDR4"
-  }
-},
+    id: 23,
+    nombre: "DOMINATOR® PLATINUM RGB 32GB",
+    categoria: "Componentes",
+    precio: 329.0,
+    precioOferta: 289.0,
+    imagen: "img/productos_estatic/componente/pla.png",
+    modelo3D: "img/modelos/componentes/pla/scene.gltf",
+    descripcion: "Placa base micro-ATX Ultra Durable con soporte para procesadores AMD Ryzen/Athlon, ranura M.2 NVMe PCIe Gen3 y memoria DDR4.",
+    especificaciones: {
+      "Factor de forma": "Micro-ATX",
+      Socket: "AM4",
+      Almacenamiento: "M.2 NVMe PCIe Gen3 x4",
+      "Memoria RAM": "DDR4"
+    }
+  },
   {
     id: 24,
-    nombre: "Tarjeta Gráfica PNY GeForce RTX 5050",
+    nombre: "X570 Prime Motherboard",
     categoria: "Componentes",
     precio: 1499.0,
     precioOferta: 1299.0,
-    imagen: "",
+    imagen: "img/productos_estatic/componente/57.png",
+    modelo3D: "img/modelos/componentes/57/scene.gltf",
     descripcion: "Tarjeta gráfica PNY GeForce RTX 5050 con diseño de doble ventilador, 8GB GDDR6 y tecnología Stealth Mode",
     especificaciones: {
       "Memoria": "8 GB GDDR6",
@@ -455,11 +478,12 @@ const PRODUCTOS = [
   },
   {
     id: 25,
-    nombre: "Tarjeta Gráfica PNY GeForce RTX 5060 Ti (8GB OC)",
+    nombre: "Memoria RAM G.Skill Trident Z RGB",
     categoria: "Componentes",
     precio: 1899.0,
     precioOferta: 1699.0,
-    imagen: "",
+    imagen: "img/productos_estatic/componente/z.png",
+    modelo3D: "img/modelos/componentes/z/scene.gltf",
     descripcion: "Tarjeta gráfica PNY GeForce RTX 5060 Ti Overclocked con 8GB GDDR7 y doble ventilador",
     especificaciones: {
       "Memoria": "8 GB GDDR7",
@@ -470,11 +494,12 @@ const PRODUCTOS = [
   },
   {
     id: 26,
-    nombre: "Tarjeta Gráfica PNY GeForce RTX 5060 Ti RGB (Triple Fan)",
+    nombre: "Tarjeta Gráfica Nvidia GeForce RTX 3090",
     categoria: "Componentes",
     precio: 2099.0,
     precioOferta: 1899.0,
-    imagen: "",
+    imagen: "img/productos_estatic/componente/39.png",
+    modelo3D: "img/modelos/componentes/39/scene.gltf",
     descripcion: "Tarjeta gráfica PNY GeForce RTX 5060 Ti con iluminación Epic-X RGB y sistema de tres ventiladores",
     especificaciones: {
       "Memoria": "8 GB GDDR7",
@@ -485,11 +510,12 @@ const PRODUCTOS = [
   },
   {
     id: 27,
-    nombre: "Tarjeta Gráfica PNY GeForce RTX 5060 Ti (16GB)",
+    nombre: "Procesador Intel Core i9",
     categoria: "Componentes",
     precio: 2399.0,
     precioOferta: 2199.0,
-    imagen: "",
+    imagen: "img/productos_estatic/componente/9.png",
+    modelo3D: "img/modelos/componentes/9/scene.gltf",
     descripcion: "Tarjeta gráfica PNY GeForce RTX 5060 Ti de alta capacidad con 16GB GDDR7 y doble ventilador",
     especificaciones: {
       "Memoria": "16 GB GDDR7",
@@ -500,11 +526,12 @@ const PRODUCTOS = [
   },
   {
     id: 28,
-    nombre: "Tarjeta Gráfica PNY GeForce RTX 5060",
+    nombre: "Ventilador Lian Li UNI FAN SL120 RGB Black",
     categoria: "Componentes",
     precio: 1699.0,
     precioOferta: 1499.0,
-    imagen: "",
+    imagen: "img/productos_estatic/componente/120.png",
+    modelo3D: "img/modelos/componentes/120/scene.gltf",
     descripcion: "Tarjeta gráfica PNY GeForce RTX 5060 con 8GB GDDR7, overclock de fábrica y doble ventilador",
     especificaciones: {
       "Memoria": "8 GB GDDR7",
@@ -513,46 +540,18 @@ const PRODUCTOS = [
       "Tecnologías": "DLSS 4, Ray Tracing, Reflex, Studio"
     }
   },
-  {
-    id: 29,
-    nombre: "Tarjeta Gráfica MSI GeForce GTX 1050 Ti Gaming X",
-    categoria: "Componentes",
-    precio: 799.0,
-    precioOferta: 649.0,
-    imagen: "",
-    descripcion: "Tarjeta gráfica MSI GeForce GTX 1050 Ti Gaming X con 4GB de memoria y sistema Twin Frozr VI",
-    especificaciones: {
-      "Memoria": "4 GB",
-      "Refrigeración": "Twin Frozr VI (Doble ventilador)",
-      "Serie": "GeForce GTX 1050 Ti"
-    }
-  },
-  {
-    id: 30,
-    nombre: "Tarjeta Gráfica EVGA GeForce GTX 1660 Super SC Ultra",
-    categoria: "Componentes",
-    precio: 999.0,
-    precioOferta: 849.0,
-    imagen: "",
-    descripcion: "Tarjeta gráfica EVGA GeForce GTX 1660 Super SC Ultra con diseño de doble ventilador y arquitectura Turing",
-    especificaciones: {
-      "Memoria": "GDDR6",
-      "Edición": "SC Ultra",
-      "Refrigeración": "Doble ventilador",
-      "Tecnologías": "Turing Shaders, Ansel, DirectX 12"
-    }
-  },
+  
 
   // ---------------------- ACCESORIOS ----------------------
   {
     id: 31,
-    nombre: "Teclado Mecánico FiddlerZ RGB",
+    nombre: "Mouse A4Tech X-710BK",
     categoria: "Accesorios",
     precio: 259.0,
     precioOferta: 199.0,
-    imagen: "img/productos/fiddler.jpg",
-    descripcion:
-      "Switches azules, iluminación RGB personalizable y estructura resistente.",
+    imagen: "img/productos_estatic/aceesorio/710.png",
+    modelo3D: "img/modelos/accesorios/mouse_g/scene.gltf",
+    descripcion: "Switches azules, iluminación RGB personalizable y estructura resistente.",
     especificaciones: {
       Tipo: "Mecánico",
       Switch: "Blue (clicky)",
@@ -565,11 +564,12 @@ const PRODUCTOS = [
 
   {
     id: 32,
-    nombre: "Teclado Mecánico Redragon Kumara K552 RGB",
+    nombre: "RAZER KRAKEN V3 X ",
     categoria: "Accesorios",
     precio: 189.0,
     precioOferta: 149.0,
-    imagen: "img/productos/k552.jpg",
+    imagen: "img/productos_estatic/aceesorio/razer.png",
+    modelo3D: "img/modelos/accesorios/razer_head/scene.gltf",
     descripcion: "Diseño compacto TKL sin teclado numérico, switches mecánicos y retroiluminación RGB vívida",
     especificaciones: {
       Tipo: "Mecánico TKL",
@@ -580,14 +580,15 @@ const PRODUCTOS = [
       "Anti-ghosting": "Sí, 100% Anti-ghosting"
     }
   },
-  
-{
+
+  {
     id: 33,
-    nombre: "Teclado Mecánico Logitech G PRO X RGB",
+    nombre: "Logitech G502 X LIGHTSPEED Wireless",
     categoria: "Accesorios",
     precio: 549.0,
     precioOferta: 489.0,
-    imagen: "img/productos/6pro.jpg",
+    imagen: "img/productos_estatic/aceesorio/502.png",
+    modelo3D: "img/modelos/accesorios/502/scene.gltf",
     descripcion: "Diseñado para profesionales de esports con switches intercambiables y perfil compacto",
     especificaciones: {
       Tipo: "Mecánico Pro TKL",
@@ -600,31 +601,31 @@ const PRODUCTOS = [
   },
 
   {
-     id: 34,
-     nombre: "Mouse Inalámbrico Logitech M220 Silent",
-   categoria: "Accesorios",
-   precio: 79.0,
-   precioOferta: null,
-   imagen: "img/productos/mouse.jpg",
-   descripcion:
-    "Disfruta de la misma sensación de clic pero un 90% menos de ruido, diseño compacto y seguimiento óptico avanzado.",
-   especificaciones: {
-    Sensor: "Óptico de alta precisión (1000 DPI)",
-    Conexión: "Inalámbrico 2.4 GHz mediante nano receptor USB",
-    Botones: "3",
-    Batería: "1x AA (hasta 18 meses)",
-    Compatibilidad: "Windows, macOS, ChromeOS, Linux"
+    id: 34,
+    nombre: "Corsair Strafe RGB Mechanical Keyboard",
+    categoria: "Accesorios",
+    precio: 79.0,
+    precioOferta: null,
+    imagen: "img/productos_estatic/aceesorio/straf.png",
+    modelo3D: "img/modelos/accesorios/straf/scene.gltf",
+    descripcion: "Disfruta de la misma sensación de clic pero un 90% menos de ruido, diseño compacto y seguimiento óptico avanzado.",
+    especificaciones: {
+      Sensor: "Óptico de alta precisión (1000 DPI)",
+      Conexión: "Inalámbrico 2.4 GHz mediante nano receptor USB",
+      Botones: "3",
+      Batería: "1x AA (hasta 18 meses)",
+      Compatibilidad: "Windows, macOS, ChromeOS, Linux"
     },
-    },
+  },
   {
     id: 35,
-    nombre: "Audífonos Bluetooth ANC",
+    nombre: "Logitech Mechanical Gaming Keyboard Series",
     categoria: "Accesorios",
     precio: 399.0,
     precioOferta: 329.0,
-    imagen: "img/productos/auri.jpg",
-    descripcion:
-      "Cancelación activa de ruido, sonido envolvente y hasta 30 horas de reproducción.",
+    imagen: "img/productos_estatic/aceesorio/logi.png",
+    modelo3D: "img/modelos/accesorios/logi/scene.gltf",
+    descripcion: "Cancelación activa de ruido, sonido envolvente y hasta 30 horas de reproducción.",
     especificaciones: {
       Tipo: "Over-ear",
       "Cancelación de ruido": "Activa (ANC)",
@@ -635,12 +636,14 @@ const PRODUCTOS = [
     }
   },
 
-  { id: 36,
-    nombre: "Mouse Inalámbrico Logitech G PRO X SUPERLIGHT 2",
+  {
+    id: 36,
+    nombre: "Skullcandy Crusher Wireless Over-Ear Headphones ",
     categoria: "Accesorios",
     precio: 629.0,
     precioOferta: 579.0,
-    imagen: "img/productos/mouse-pro.jpg",
+    imagen: "img/productos_estatic/aceesorio/CRUSH.png",
+    modelo3D: "img/modelos/accesorios/CRUSH/scene.gltf",
     descripcion: "Ultraligero de rendimiento superior con tecnología inalámbrica LIGHTSPEED y sensor HERO 2",
     especificaciones: {
       Tipo: "Mouse inalámbrico gaming",
@@ -652,13 +655,14 @@ const PRODUCTOS = [
     }
   },
 
-{
+  {
     id: 37,
-    nombre: "Teclado Mecánico Inalámbrico RK S85 (Edición Turntable)",
+    nombre: "Audio-Technica ATH-M Series Studio Headphones",
     categoria: "Accesorios",
     precio: 399.0,
     precioOferta: 349.0,
-    imagen: "",
+    imagen: "img/productos_estatic/aceesorio/TECH.png",
+    modelo3D: "img/modelos/accesorios/TECH/scene.gltf",
     descripcion: "Teclado mecánico inalámbrico con diseño personalizado en tonos blancos, rojos y naranjas, iluminación RGB, pantalla inteligente integrada y botones multimedia dedicados.",
     especificaciones: {
       Conectividad: "Inalámbrico 2.4GHz, Bluetooth y Cable",
@@ -668,11 +672,12 @@ const PRODUCTOS = [
   },
   {
     id: 38,
-    nombre: "Audífonos Inalámbricos TWS con Estuche Digital",
+    nombre: "Behringer U-Phoria UM2 USB Audio Interface",
     categoria: "Accesorios",
     precio: 149.0,
     precioOferta: 119.0,
-    imagen: "",
+    imagen: "img/productos_estatic/aceesorio/p.png",
+    modelo3D: "img/modelos/accesorios/p/scene.gltf",
     descripcion: "Auriculares inalámbricos deportivos con estuche de carga inteligente fabricado en material ABS y visor digital de batería.",
     especificaciones: {
       Material: "ABS",
@@ -681,11 +686,12 @@ const PRODUCTOS = [
   },
   {
     id: 39,
-    nombre: "Teclado Mecánico RK S85 (Horizon Blue)",
+    nombre: "Insta360 Link 2 4K AI Webcam",
     categoria: "Accesorios",
     precio: 399.0,
     precioOferta: 349.0,
-    imagen: "",
+    imagen: "img/productos_estatic/aceesorio/360.png",
+    modelo3D: "img/modelos/accesorios/360/scene.gltf",
     descripcion: "Teclado mecánico con estructura Gasket, pantalla inteligente, sistema de conexión de 3 modos y perilla metálica superior en tonos azulados.",
     especificaciones: {
       Estructura: "Gasket structure",
@@ -695,11 +701,12 @@ const PRODUCTOS = [
   },
   {
     id: 40,
-    nombre: "Teclado Gaming de Membrana Multimedia",
+    nombre: "Logitech G813 LIGHTSYNC RGB Low Profile",
     categoria: "Accesorios",
     precio: 99.0,
     precioOferta: 79.0,
-    imagen: "",
+    imagen: "img/productos_estatic/aceesorio/813.png",
+    modelo3D: "img/modelos/accesorios/813/scene.gltf",
     descripcion: "Teclado con cable para gaming, chasis angular de diseño robusto en color negro y retroiluminación LED azul.",
     especificaciones: {
       Tipo: "Membrana con cable",
@@ -710,13 +717,13 @@ const PRODUCTOS = [
   // ---------------------- MONITORES ----------------------
   {
     id: 41,
-    nombre: "ASUS ROG Strix XG259CMS",
+    nombre: "Samsung 24' Curved Display Series",
     categoria: "Monitores",
     precio: 1899.0,
     precioOferta: null,
-    imagen: "img/productos/pantalla245.jpg",
-    descripcion:
-      "Pantalla rápida de 24.5 pulgadas diseñada para esports y máxima fluidez competitiva",
+    imagen: "img/productos_estatic/monitor/24.png",
+    modelo3D: "img/modelos/monitores/24/scene.gltf",
+    descripcion: "Pantalla rápida de 24.5 pulgadas diseñada para esports y máxima fluidez competitiva",
     especificaciones: {
       "Tamaño": "24.5 pulgadas",
       Resolución: "1920x1080 (Full HD)",
@@ -728,13 +735,13 @@ const PRODUCTOS = [
   },
   {
     id: 42,
-    nombre: "ASUS ROG Strix OLED XG27AQDMG",
+    nombre: "Samsung Odyssey OLED G9 Gaming Monitor",
     categoria: "Monitores",
     precio: 3299.0,
     precioOferta: 1099.0,
-    imagen: "img/productos/pulgas27.jpg",
-    descripcion:
-      "Calidad visual superior con panel OLED brillante y negros absolutos para gaming avanzado",
+    imagen: "img/productos_estatic/monitor/g9.png",
+    modelo3D: "img/modelos/monitores/g9/scene.gltf",
+    descripcion: "Calidad visual superior con panel OLED brillante y negros absolutos para gaming avanzado",
     especificaciones: {
       "Tamaño": "27 pulgadas",
       Resolución: "2560x1440 (QHD)",
@@ -746,13 +753,13 @@ const PRODUCTOS = [
   },
   {
     id: 43,
-    nombre: "ASUS ROG Swift OLED PG34WCDM",
+    nombre: "Monitor Gamer Samsung Odyssey G3 144Hz",
     categoria: "Monitores",
     precio: 6299.0,
     precioOferta: null,
-    imagen: "img/productos/monitorasus.jpg",
-    descripcion:
-      "Inmersión total ultra panorámica con tecnología OLED y alta velocidad de refresco",
+    imagen: "img/productos_estatic/monitor/144.png",
+    modelo3D: "img/modelos/monitores/144/scene.gltf",
+    descripcion: "Inmersión total ultra panorámica con tecnología OLED y alta velocidad de refresco",
     especificaciones: {
       "Tamaño": "34 pulgadas",
       Resolución: "3440x1440 (UWQHD)",
@@ -764,13 +771,13 @@ const PRODUCTOS = [
   },
   {
     id: 44,
-    nombre: "TEROS IPS TE-2714S FHD",
+    nombre: "Monitor LG 4K de 32 Pulgadas",
     categoria: "Monitores",
     precio: 576.0,
     precioOferta: null,
-    imagen: "",
-    descripcion:
-      "Inmersión total ultra panorámica con tecnología OLED y alta velocidad de refresco",
+    imagen: "img/productos_estatic/monitor/32.png",
+    modelo3D: "img/modelos/monitores/32/scene.gltf",
+    descripcion: "Inmersión total ultra panorámica con tecnología OLED y alta velocidad de refresco",
     especificaciones: {
       "Tamaño": "27 pulgadas",
       Resolución: "1920 x 1080 (FHD)",
@@ -782,13 +789,13 @@ const PRODUCTOS = [
   },
   {
     id: 45,
-    nombre: "Monitor Gamer Teros TE-3412G 34",
+    nombre: "Monitor Gamer Acer Nitro 27' VG270 144Hz",
     categoria: "Monitores",
     precio: 768.0,
     precioOferta: null,
-    imagen: "",
-    descripcion:
-      "Pantalla ultra ancha de 34 UWQHD (180Hz / 1ms) con panel VA curvo, ideal para gaming inmersivo y multitarea",
+    imagen: "img/productos_estatic/monitor/acer.png",
+    modelo3D: "img/modelos/monitores/acer/scene.gltf",
+    descripcion: "Pantalla ultra ancha de 34 UWQHD (180Hz / 1ms) con panel VA curvo, ideal para gaming inmersivo y multitarea",
     especificaciones: {
       "Tamaño": "34 pulgadas",
       Resolución: "	3440 x 1440 (Ultra-WQHD)",
@@ -798,15 +805,15 @@ const PRODUCTOS = [
       Puertos: "2x HDMI, 1x DisplayPort, USB-C (90W)"
     }
   },
-  	{
+  {
     id: 46,
-    nombre: "Monitor Curvo gaming TEROS TE-3412G 34 UWQHD PREMIUM",
+    nombre: "Monitor Curvo Profesional Dell UltraSharp 40",
     categoria: "Monitores",
     precio: 890.0,
     precioOferta: null,
-    imagen: "",
-    descripcion:
-      "Monitor curvo gaming de 34\" UWQHD (3440x1440), panel VA, 180Hz, 1ms, HDR10 y FreeSync Premium",
+    imagen: "img/productos_estatic/monitor/40.png",
+    modelo3D: "img/modelos/monitores/40/scene.gltf",
+    descripcion: "Monitor curvo gaming de 34\" UWQHD (3440x1440), panel VA, 180Hz, 1ms, HDR10 y FreeSync Premium",
     especificaciones: {
       "Tamaño": "34 pulgadas",
       Resolución: "	3440 x 1440 (Ultra-WQHD)",
@@ -818,13 +825,13 @@ const PRODUCTOS = [
   },
   {
     id: 47,
-    nombre: "Monitor Curvo TEROS TE-3253S 31.5",
+    nombre: "Monitor Acer SB230 23' Full HD 75Hz",
     categoria: "Monitores",
     precio: 490.0,
     precioOferta: null,
-    imagen: "",
-    descripcion:
-      "Monitor curvo de 31.5 QHD panel VA 75Hz 1ms y FreeSync Ideal para oficina y gaming casual",
+    imagen: "img/productos_estatic/monitor/23.png",
+    modelo3D: "img/modelos/monitores/23/scene.gltf",
+    descripcion: "Monitor curvo de 31.5 QHD panel VA 75Hz 1ms y FreeSync Ideal para oficina y gaming casual",
     especificaciones: {
       "Tamaño": "31.5 pulgadas",
       Resolución: "	2560x1440",
@@ -834,4 +841,4 @@ const PRODUCTOS = [
       Puertos: "2x HDMI, 1x DisplayPort, USB-C (90W)"
     }
   },
-  ];
+];

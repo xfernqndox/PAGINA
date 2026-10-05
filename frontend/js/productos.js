@@ -51,7 +51,7 @@ const PRODUCTOS = [
     categoria: "Laptops",
     precio: 8999.0,
     precioOferta: 8299.0,
-    imagen: "img/productos_estatic/latop/mack_3m.png",
+    imagen: "img/productos_estatic/latop/ma.png",
     modelo3D: "img/modelos/laptots/macbook_pro_/scene.gltf",
     descripcion:
       "Rendimiento extremo para profesionales exigentes, con pantalla Liquid Retina XDR de 120 Hz y máxima conectividad.",

@@ -193,6 +193,7 @@ function mostrarNotificacionToast(texto) {
   }, 2200);
 }
 
+
 // ------------------------------------------------------------
 //  SESIÓN DE USUARIO
 // ------------------------------------------------------------
@@ -209,3 +210,4 @@ function iniciarSesion(usuarioData) {
 function cerrarSesion() {
   localStorage.removeItem(CLAVE_SESION);
 }
+

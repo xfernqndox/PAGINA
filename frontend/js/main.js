@@ -4,6 +4,8 @@
 //  (contador del carrito y estado de la sesión).
 // ============================================================
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
   actualizarContadorCarrito();
   actualizarMenuUsuario();
@@ -37,3 +39,4 @@ function actualizarMenuUsuario() {
     menuUsuario.classList.add("d-none");
   }
 }
+

@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PC PE'</title>
-
     <!-- 1. Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-
     <!-- 2. Bootstrap Icons (¡ESTA LÍNEA ES LA QUE HACE VER LOS ÍCONOS Y EL RAYO!) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
     <!-- 3. Tu archivo de estilos -->
     <link rel="stylesheet" href="css/styles.css">
+    
+    <script src="https://cdn.userway.org/widget.js" data-account="nbiFgQpNCg"></script>
 </head>
 
 <body>
@@ -73,21 +72,18 @@
             </div>
         </div>
     </nav>
-
     <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
     <main>
         <!-- ===== PORTADA ===== -->
         <section class="hero-compact">
             <div class="container py-4">
                 <div class="row align-items-center">
-
                     <!-- Llama flotante a la izquierda (Cambiado a col-lg-6) -->
                     <div class="col-lg-6 text-center my-3">
                         <div class="llama-wrapper">
                             <img src="img/logo/llama.png" alt="Mascota PC PE" class="llama-3d-effect">
                         </div>
                     </div>
-
                     <!-- Texto Tech a la derecha (Cambiado a col-lg-6) -->
                     <div class="col-lg-6 my-3 text-center text-lg-start">
                         <h1 class="tech-title my-2">
@@ -103,11 +99,9 @@
                             <i class="bi bi-arrow-down-short fs-4 icon-arrow"></i>
                         </a>
                     </div>
-
                 </div>
             </div>
         </section>
-
         <!-- ==================== CATÁLOGO ==================== -->
         <section id="catalogo" class="py-5">
             <div class="container">
@@ -115,7 +109,6 @@
                     <span class="text-uppercase text-info fw-bold fs-7">NUESTRO CATÁLOGO</span>
                     <h2 class="fw-bold text-white">Productos destacados</h2>
                 </div>
-
                 <div class="catalog-layout">
                     <!-- ==================== FILTROS ==================== -->
                     <aside class="filter-panel mb-4">
@@ -123,7 +116,6 @@
                             <span>☷</span>
                             <h3 class="d-inline ms-2 fs-5">Filtrar productos</h3>
                         </div>
-
                         <!-- Usamos row de Bootstrap para ordenar los controles en una sola línea -->
                         <div class="row g-3 align-items-end">
                             <!-- Buscar -->
@@ -131,7 +123,6 @@
                                 <label for="buscar" class="form-label text-white small mb-1">Buscar producto</label>
                                 <input type="text" id="buscar" class="form-control" placeholder="Ej. teclado gamer...">
                             </div>
-
                             <!-- Categoría -->
                             <div class="col-md-3 col-lg-3">
                                 <label for="filtro-categoria" class="form-label text-white small mb-1">Categoría</label>
@@ -139,7 +130,6 @@
                                     <option value="">Todas las categorías</option>
                                 </select>
                             </div>
-
                             <!-- Ordenar -->
                             <div class="col-md-3 col-lg-3">
                                 <label for="filtro-orden" class="form-label text-white small mb-1">Ordenar por</label>
@@ -150,7 +140,6 @@
                                     <option value="nombre">Nombre (A-Z)</option>
                                 </select>
                             </div>
-
                             <!-- Checkbox Solo ofertas -->
                             <div class="col-md-2 col-lg-3 pb-2">
                                 <div class="form-check">
@@ -164,7 +153,6 @@
                     </aside>
                     <!-- ==================== PRODUCTOS ==================== -->
                     <section class="products-area">
-
                         <!-- Lista dinámica de productos -->
                         <div class="row g-3" id="lista-productos"></div>
                     </section>
@@ -172,7 +160,6 @@
             </div>
         </section>
     </main>
-
     <!-- ==================== FOOTER ==================== -->
     <footer class="main-footer py-5">
         <div class="container">
@@ -187,7 +174,6 @@
                         Tienda de tecnología: laptops, celulares, componentes, accesorios y monitores.
                     </p>
                 </div>
-
                 <!-- Enlaces -->
                 <div class="col-lg-4 col-md-6">
                     <h5 class="footer-title mb-3">Enlaces</h5>
@@ -200,7 +186,6 @@
                         <li><a href="login.html">Iniciar Sesión</a></li>
                     </ul>
                 </div>
-
                 <!-- Síguenos -->
                 <div class="col-lg-4 col-md-12">
                     <h5 class="footer-title mb-3">Síguenos</h5>
@@ -212,26 +197,23 @@
                     </div>
                 </div>
             </div>
-
             <hr class="footer-divider my-4">
-
             <div class="text-center text-muted small">
                 © 2026 PC PE'. Proyecto académico – Curso de Programación Web.
             </div>
         </div>
     </footer>
-
     <!-- ==================== SCRIPTS ==================== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/productos.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
     <script src="js/catalogo.js"></script>
-
     <!-- Inicializar catálogo -->
     <script>
         document.addEventListener("DOMContentLoaded", initCatalogo);
     </script>
+
 
     <script type="text/javascript">
         (function (d, t) {
@@ -248,6 +230,10 @@
             v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
         })(document, 'script');
     </script>
+
+</body>
+
+</html>
 </body>
 
 </html>

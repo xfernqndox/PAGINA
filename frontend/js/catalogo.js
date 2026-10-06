@@ -105,25 +105,49 @@ async function initCatalogo() {
   const contadorResultados = document.getElementById("contador-resultados");
   const contenedor = document.getElementById("lista-productos");
 
-  // 1. Cargar las categorías dinámicamente desde el backend Node.js
-  try {
-    const resCategorias = await fetch("/api/categorias");
-    if (resCategorias.ok) {
-      const dataCat = await resCategorias.json();
-      if (dataCat.ok && Array.isArray(dataCat.categorias)) {
-        // Limpiar opciones previas excepto "Todas"
-        selectCategoria.innerHTML = '<option value="">Todas las categorías</option>';
-        dataCat.categorias.forEach(function (cat) {
-          const opcion = document.createElement("option");
-          opcion.value = cat;
-          opcion.textContent = cat;
-          selectCategoria.appendChild(opcion);
-        });
-      }
+// 1. Cargar las categorías dinámicamente
+try {
+  const resCategorias = await fetch("/api/categorias");
+
+  if (resCategorias.ok) {
+    const dataCat = await resCategorias.json();
+
+    if (dataCat.ok && Array.isArray(dataCat.categorias)) {
+      selectCategoria.innerHTML =
+        '<option value="">Todas las categorías</option>';
+
+      dataCat.categorias.forEach(function (cat) {
+        const opcion = document.createElement("option");
+        opcion.value = cat;
+        opcion.textContent = cat;
+        selectCategoria.appendChild(opcion);
+      });
     }
-  } catch (e) {
-    console.warn("No se pudo cargar categorías desde Node.js, usando respaldo si existe.", e);
   }
+} catch (e) {
+  console.warn("No se pudo cargar categorías desde Node.js.");
+}
+
+// Respaldo: obtener categorías desde los productos locales
+if (
+  selectCategoria &&
+  selectCategoria.options.length <= 1 &&
+  typeof PRODUCTOS !== "undefined" &&
+  Array.isArray(PRODUCTOS)
+) {
+  const categorias = [...new Set(
+    PRODUCTOS.map(function (p) {
+      return p.categoria;
+    })
+  )].filter(Boolean);
+
+  categorias.forEach(function (cat) {
+    const opcion = document.createElement("option");
+    opcion.value = cat;
+    opcion.textContent = cat;
+    selectCategoria.appendChild(opcion);
+  });
+}
 
   // 2. Función para consultar productos a la API de Node.js
   let debounceTimeout = null;

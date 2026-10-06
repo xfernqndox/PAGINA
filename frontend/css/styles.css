@@ -27,8 +27,8 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
-    background: radial-gradient(circle at 75% 12%, #12356855, transparent 28%), 
-                linear-gradient(135deg, #020b18, #061426 55%, #031021);
+    background: radial-gradient(circle at 75% 12%, #12356855, transparent 28%),
+        linear-gradient(135deg, #020b18, #061426 55%, #031021);
     color: var(--text);
     font-family: var(--font-body);
     overflow-x: hidden;
@@ -186,13 +186,16 @@ main {
     border-bottom: 1px solid rgba(56, 189, 248, 0.15);
     overflow: visible;
 }
-.hero-compact img, 
+
+.hero-compact img,
 .hero-img {
-    max-width: 450px !important; /* Aumenta este número si la quieres todavía más grande */
+    max-width: 450px !important;
+    /* Aumenta este número si la quieres todavía más grande */
     width: 100%;
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 0 25px rgba(56, 189, 248, 0.3)); /* Resplandor azul gamer */
+    filter: drop-shadow(0 0 25px rgba(56, 189, 248, 0.3));
+    /* Resplandor azul gamer */
     transition: transform 0.3s ease;
 }
 
@@ -257,7 +260,8 @@ main {
 .llama-3d-effect {
     position: relative;
     z-index: 2;
-    max-height: 420px; /* <--- Aumentado de 310px a 420px */
+    max-height: 420px;
+    /* <--- Aumentado de 310px a 420px */
     width: 100%;
     object-fit: contain;
     filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.85)) drop-shadow(0 0 22px rgba(56, 189, 248, 0.45));
@@ -269,6 +273,7 @@ main {
     transform: scale(1.05) rotate(-2deg) translateY(-5px);
     filter: drop-shadow(0 25px 30px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 32px rgba(56, 189, 248, 0.65));
 }
+
 @keyframes floatLlama {
 
     0%,
@@ -318,11 +323,13 @@ main {
 }
 
 .filter-panel {
-    background-color: #061426; /* Fondo del contenedor */
+    background-color: #061426;
+    /* Fondo del contenedor */
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 1.25rem;
-    width: 100%; /* Ocupa exactamente el ancho del contenedor padre */
+    width: 100%;
+    /* Ocupa exactamente el ancho del contenedor padre */
 }
 
 .filter-title h3 {
@@ -408,12 +415,12 @@ table thead th {
     font-family: var(--font-tech);
 }
 
-/* ===== CORRECCIÓN DE TEXTOS OSCURO/ILEGIBLES EN CONTACTO Y RECLAMACIONES ===== */
-/* Textos descriptivos universales */
+
 
 small,
 .text-muted {
-    color: #d8e0ed !important; /* Un azul grisáceo claro que combina con tu fondo #020b18 */
+    color: #d8e0ed !important;
+    /* Un azul grisáceo claro que combina con tu fondo #020b18 */
 }
 
 /* Encabezados de páginas generales */
@@ -459,7 +466,7 @@ footer {
 }
 
 /* Titulares del footer */
-footer h5, 
+footer h5,
 footer h6 {
     font-family: var(--font-tech);
     color: #f1f6ff;
@@ -507,9 +514,10 @@ footer h6 {
 .footer-divider {
     border-color: rgba(23, 52, 84, 0.6);
 }
+
 /* ===== RESPONSIVE FOOTER ===== */
 @media (max-width: 768px) {
-    footer .row > div {
+    footer .row>div {
         text-align: center;
     }
 
@@ -517,14 +525,17 @@ footer h6 {
         justify-content: center;
     }
 }
+
 /* ===== PRODUCTO ===== */
 .categoria-producto {
     background-color: #eb700c !important;
     color: #ffffff !important;
 }
+
 .seguir-comprando {
     color: #2161d8 !important;
 }
+
 .btn-volver-catalogo {
     color: #ffffff !important;
     background-color: transparent !important;
@@ -535,6 +546,7 @@ footer h6 {
     background-color: #38bdf8 !important;
     color: #061326 !important;
 }
+
 /* ===== TODOS LOS BOTONES AGREGAR AL CARRITO ===== */
 
 .btn-agregar-carrito,
@@ -553,6 +565,7 @@ footer h6 {
     color: #061326 !important;
     transform: translateY(-2px);
 }
+
 .btn-ver-detalle {
     background-color: transparent !important;
     border: 2px solid #38bdf8 !important;
@@ -567,6 +580,7 @@ footer h6 {
     color: #061326 !important;
     transform: translateY(-2px);
 }
+
 /* seguir comprando */
 .seguir-comprando {
     display: inline-block;
@@ -587,6 +601,7 @@ footer h6 {
     border-color: #38bdf8 !important;
     transform: translateY(-2px);
 }
+
 /* ============================================================
    CONTACTO
    ============================================================ */
@@ -601,6 +616,7 @@ footer h6 {
     color: #cbd5e1 !important;
     margin-bottom: 24px;
 }
+
 /* ===== DIVIDER CONTACTO ===== */
 .contacto-divider {
     border-color: #38bdf8 !important;
@@ -613,6 +629,7 @@ footer h6 {
     font-weight: 700;
     margin-bottom: 20px;
 }
+
 /* ===== INPUTS DE CONTACTO ===== */
 .contacto-input {
     background-color: #0b203b !important;
@@ -631,6 +648,7 @@ footer h6 {
 .contacto-input::placeholder {
     color: #94a3b8;
 }
+
 /* ===== BOTÓN ENVIAR CONTACTO ===== */
 .btn-enviar-contacto {
     background-color: #38bdf8 !important;
@@ -648,6 +666,7 @@ footer h6 {
     color: #061326 !important;
     transform: translateY(-2px);
 }
+
 /* ===== BOTÓN CORREO ASESOR ===== */
 .btn-correo-asesor {
     background-color: transparent !important;
@@ -663,6 +682,7 @@ footer h6 {
     color: #061326 !important;
     transform: translateY(-2px);
 }
+
 /* ===== BOTÓN WHATSAPP ===== */
 .btn-whatsapp {
     background-color: #16A34A !important;
@@ -678,6 +698,7 @@ footer h6 {
     color: #ffffff !important;
     transform: translateY(-2px);
 }
+
 .btn-enviar-reclamo {
     display: inline-block !important;
     background-color: #38BDF8 !important;
@@ -690,6 +711,7 @@ footer h6 {
     border-radius: 7px;
     transition: all 0.2s ease;
 }
+
 /* ===== BOTÓN ENVIAR RECLAMO ===== */
 .btn-enviar-reclamo:hover {
     background-color: #7DD3FC !important;
@@ -706,10 +728,12 @@ footer h6 {
     color: #061326 !important;
     opacity: 0.7 !important;
 }
+
 /* ===== OCULTAR CATEGORÍA DE PRODUCTO ===== */
 .categoria-producto {
     display: none !important;
 }
+
 /* ===== BOTÓN FINALIZAR COMPRA ===== */
 .btn-finalizar-compra {
     background-color: #38BDF8 !important;
@@ -726,235 +750,4 @@ footer h6 {
     transform: translateY(-2px);
 }
 
-/* ===== BADGES DE STOCK TECH ===== */
-.badge-stock {
-    font-family: var(--font-tech);
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.4px;
-    padding: 4px 8px;
-    border-radius: 6px;
-    display: inline-flex;
-    align-items: center;
-}
 
-.badge-stock-ok {
-    background: rgba(25, 211, 138, 0.15) !important;
-    color: #19d38a !important;
-    border: 1px solid rgba(25, 211, 138, 0.4) !important;
-}
-
-.badge-stock-low {
-    background: rgba(255, 165, 0, 0.18) !important;
-    color: #ffa500 !important;
-    border: 1px solid rgba(255, 165, 0, 0.5) !important;
-    box-shadow: 0 0 10px rgba(255, 165, 0, 0.25);
-    animation: pulseStock 2s infinite ease-in-out;
-}
-
-.badge-stock-out {
-    background: rgba(255, 65, 100, 0.2) !important;
-    color: #ff4164 !important;
-    border: 1px solid rgba(255, 65, 100, 0.5) !important;
-}
-
-@keyframes pulseStock {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.04);
-    }
-}
-
-/* ===== SERVICIO POST VENTA (DISEÑO 100% IDÉNTICO A LA PÁGINA PRINCIPAL) ===== */
-.text-cyan {
-    color: #38bdf8 !important;
-}
-
-/* Grupo de Pestañas estilo Tech / Gamer */
-.postventa-tab-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    background-color: #061426;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 12px;
-    margin-bottom: 25px;
-}
-
-.postventa-tab-btn {
-    font-family: var(--font-tech) !important;
-    font-size: 0.85rem !important;
-    font-weight: 700 !important;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    padding: 10px 18px;
-    border-radius: 8px;
-    border: 1px solid #29476e;
-    background: #0c213d;
-    color: #c0d4f0;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.postventa-tab-btn:hover {
-    background: rgba(56, 189, 248, 0.2);
-    color: #38bdf8;
-    border-color: #38bdf8;
-    transform: translateY(-2px);
-}
-
-.postventa-tab-btn.active {
-    background: #38bdf8 !important;
-    color: #061326 !important;
-    border-color: #38bdf8 !important;
-    box-shadow: 0 0 16px rgba(56, 189, 248, 0.45);
-}
-
-/* Tarjetas idénticas a las cards del catálogo */
-.card-postventa {
-    background: linear-gradient(180deg, #081a31, #061326) !important;
-    border: 1px solid #1d3c64 !important;
-    border-radius: 12px !important;
-    box-shadow: 0 8px 22px #0004 !important;
-    color: #fff !important;
-    padding: 1.5rem;
-}
-
-.card-postventa h3,
-.card-postventa h4,
-.card-postventa h5,
-.card-postventa h6 {
-    font-family: var(--font-tech) !important;
-    letter-spacing: 0.5px;
-    color: #ffffff !important;
-}
-
-/* Input boxes en postventa */
-.postventa-input-group .input-group-text {
-    background: #081a31 !important;
-    border: 1px solid #29476e !important;
-    color: #38bdf8 !important;
-    font-size: 1.1rem;
-}
-
-/* ===== STEPPER DE SEGUIMIENTO DE PEDIDOS TECH ===== */
-.stepper-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 32px 0 24px;
-    padding: 0 15px;
-}
-
-.stepper-progress {
-    position: absolute;
-    top: 24px;
-    left: 45px;
-    right: 45px;
-    height: 4px;
-    background: #17345c;
-    z-index: 1;
-}
-
-.stepper-progress-bar {
-    height: 100%;
-    background: linear-gradient(90deg, #087dff, #38bdf8);
-    box-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
-    transition: width 0.4s ease;
-}
-
-.stepper-step {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.step-circle {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: #061326;
-    border: 2px solid #29476e;
-    color: #8fa6c5;
-    display: grid;
-    place-items: center;
-    font-size: 1.25rem;
-    transition: all 0.3s ease;
-    margin-bottom: 8px;
-}
-
-.stepper-step.completed .step-circle {
-    background: #0c2b53;
-    border-color: #38bdf8;
-    color: #38bdf8;
-}
-
-.stepper-step.active .step-circle {
-    background: #38bdf8;
-    border-color: #ffffff;
-    color: #061326;
-    box-shadow: 0 0 20px rgba(56, 189, 248, 0.7);
-    transform: scale(1.1);
-}
-
-.step-label {
-    font-family: var(--font-tech);
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: #8fa6c5;
-    max-width: 95px;
-}
-
-.stepper-step.active .step-label,
-.stepper-step.completed .step-label {
-    color: #38bdf8;
-}
-
-/* Acordeón de FAQ con el estilo Tech Gamer */
-.postventa-accordion .accordion-item {
-    background: #081a31 !important;
-    border: 1px solid #1d3c64 !important;
-    margin-bottom: 12px;
-    border-radius: 10px !important;
-    overflow: hidden;
-}
-
-.postventa-accordion .accordion-button {
-    background: #0c213d !important;
-    color: #f4f8ff !important;
-    font-family: var(--font-tech) !important;
-    font-size: 1rem !important;
-    font-weight: 600 !important;
-    box-shadow: none !important;
-    padding: 16px 20px;
-    border: none !important;
-}
-
-.postventa-accordion .accordion-button:not(.collapsed) {
-    background: #112c52 !important;
-    color: #38bdf8 !important;
-    border-bottom: 1px solid #1d3c64 !important;
-}
-
-.postventa-accordion .accordion-button::after {
-    filter: invert(1);
-}
-
-.postventa-accordion .accordion-body {
-    background: #081a31 !important;
-    color: #d8e0ed !important;
-    font-size: 0.92rem;
-    line-height: 1.6;
-}

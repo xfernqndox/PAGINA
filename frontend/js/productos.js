@@ -74,7 +74,7 @@ const PRODUCTOS = [
     precio: 2999.0,
     precioOferta: 2599.0,
     imagen: "img/productos_estatic/latop/legend.png",
-    modelo3D: "img/modelos/laptots/lenovo_lap/scene.gltf",
+    modelo3D: "img/modelos/laptots/le/scene.gltf",
     descripcion:
       "Laptop HP OmniBook con procesador Intel Core 5, pantalla de 14\" 2K y gran duración de batería",
     especificaciones: {
@@ -691,7 +691,7 @@ const PRODUCTOS = [
     precio: 149.0,
     precioOferta: 119.0,
     imagen: "img/productos_estatic/aceesorio/p.png",
-    modelo3D: "img/modelos/accesorios/p/scene.gltf",
+    modelo3D: "img/modelos/accesorios/P/scene.gltf",
     descripcion: "Auriculares inalámbricos deportivos con estuche de carga inteligente fabricado en material ABS y visor digital de batería.",
     especificaciones: {
       Material: "ABS",

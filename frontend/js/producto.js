@@ -85,25 +85,26 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
   }
 
-  // Renderizar el detalle del producto con el componente oficial directo
-  // Dentro de tu archivo js/producto.js
   let htmlVisual;
 
   if (producto.modelo3D) {
-    // AQUÍ SE DECLARA EL COMPONENTE INTERACTIVO 3D
-    htmlVisual = `
-    <model-viewer 
-      src="${producto.modelo3D}" 
-      camera-controls 
-      auto-rotate
-      camera-orbit="0deg 75deg 105%"
-      shadow-intensity="1" 
-      style="width: 100%; height: 400px; background-color: #65657a28; border-radius: 12px; border: 4px solid #19437ad8;">
-    </model-viewer>
-    <p class="text-center text-muted small mt-2">✨ Usa el mouse para girar el producto en 360°</p>
-  `;
+htmlVisual = `
+<model-viewer
+  src="${producto.modelo3D}"
+  camera-controls
+  auto-rotate
+  bounds="tight"
+  camera-target="auto auto auto"
+  camera-orbit="0deg 75deg auto"
+  min-camera-orbit="auto auto auto"
+  shadow-intensity="1"
+  
+style="width: 100%; height: 400px; background: radial-gradient(circle at center, #3b4252 0%, #111827 100%); border-radius: 12px;"
+  
+</model-viewer>
+
+`;
   } else {
-    // Si el producto no tiene modelo 3D, muestra la imagen normal
     htmlVisual = `
     <img 
       src="${producto.imagen}" 
@@ -112,11 +113,6 @@ document.addEventListener("DOMContentLoaded", async function () {
       onerror="imagenNoDisponible(this)">
   `;
   }
-
-  // Después de esto, tu código debe inyectar "htmlVisual" dentro del contenedor de la página
-  // Por ejemplo: document.getElementById('detalle-producto').innerHTML = ...
-
-
 
 
   const stock = typeof producto.stock === "number" ? producto.stock : 10;
@@ -141,7 +137,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   contenedor.innerHTML =
     '<div class="row g-4">' +
     '  <div class="col-md-5">' +
-    htmlVisual + // Aquí inyectamos dinámicamente el 3D o la imagen estática
+    htmlVisual +
     "  </div>" +
     '  <div class="col-md-7">' +
     '    <span class="badge mb-2 categoria-producto">' +

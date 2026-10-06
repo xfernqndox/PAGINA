@@ -28,6 +28,21 @@ function tarjetaProducto(p) {
     htmlPrecio = '<span class="fw-bold">' + formatearPrecio(p.precio) + "</span>";
   }
 
+  const stock = typeof p.stock === "number" ? p.stock : 10;
+  let htmlStock;
+  let btnAgregarHTML;
+
+  if (stock === 0) {
+    htmlStock = '<span class="badge badge-stock badge-stock-out"><i class="bi bi-x-circle-fill me-1"></i>Agotado</span>';
+    btnAgregarHTML = '<button class="btn btn-secondary btn-sm opacity-50" disabled><i class="bi bi-slash-circle me-1"></i>Sin stock</button>';
+  } else if (stock <= 5) {
+    htmlStock = '<span class="badge badge-stock badge-stock-low"><i class="bi bi-fire me-1"></i>¡Solo ' + stock + ' unid.!</span>';
+    btnAgregarHTML = '<button class="btn btn-primary btn-sm" onclick="agregarAlCarrito(' + p.id + ')"><i class="bi bi-cart-plus me-1"></i>Agregar al carrito</button>';
+  } else {
+    htmlStock = '<span class="badge badge-stock badge-stock-ok"><i class="bi bi-box-seam me-1"></i>Stock: ' + stock + '</span>';
+    btnAgregarHTML = '<button class="btn btn-primary btn-sm" onclick="agregarAlCarrito(' + p.id + ')"><i class="bi bi-cart-plus me-1"></i>Agregar al carrito</button>';
+  }
+
   return (
     '<div class="col-sm-6 col-lg-4 col-xl-3">' +
     '  <div class="card h-100 shadow-sm">' +
@@ -37,9 +52,10 @@ function tarjetaProducto(p) {
     p.nombre +
     '" onerror="imagenNoDisponible(this)">' +
     '    <div class="card-body d-flex flex-column">' +
-    '      <span class="badge bg-secondary align-self-start mb-2">' +
-    p.categoria +
-    "</span>" +
+    '      <div class="d-flex justify-content-between align-items-center mb-2">' +
+    '        <span class="badge bg-secondary">' + p.categoria + '</span>' +
+    '        ' + htmlStock +
+    '      </div>' +
     '      <h6 class="card-title">' +
     p.nombre +
     "</h6>" +
@@ -53,9 +69,7 @@ function tarjetaProducto(p) {
     '        <a href="producto.html?id=' +
     p.id +
     '" class="btn btn-ver-detalle btn-sm">Ver detalle</a>' +
-    '        <button class="btn btn-primary btn-sm" onclick="agregarAlCarrito(' +
-    p.id +
-    ')">Agregar al carrito</button>' +
+    btnAgregarHTML +
     "      </div>" +
     "    </div>" +
     "  </div>" +

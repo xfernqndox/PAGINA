@@ -22,5 +22,94 @@
     "total": 4297,
     "fecha": "2026-09-29T17:53:33.842Z",
     "estado": "Completado"
+  },
+  {
+    "id": 2,
+    "numeroPedido": "PED-681044",
+    "usuario": "admin",
+    "items": [
+      {
+        "id": 1,
+        "nombre": "MacBook Air 13\" M1",
+        "precioUnitario": 3899,
+        "cantidad": 1,
+        "subtotal": 3899
+      },
+      {
+        "id": 10,
+        "nombre": "iPhone 14 Pro Max",
+        "precioUnitario": 1550,
+        "cantidad": 2,
+        "subtotal": 3100
+      }
+    ],
+    "total": 6999,
+    "fecha": "2026-10-04T23:31:21.044Z",
+    "estado": "Completado"
+  },
+  {
+    "id": 3,
+    "numeroPedido": "PED-296317",
+    "usuario": "admin",
+    "items": [
+      {
+        "id": 1,
+        "nombre": "MacBook Air 13\" M1",
+        "precioUnitario": 3899,
+        "cantidad": 1,
+        "subtotal": 3899
+      },
+      {
+        "id": 10,
+        "nombre": "iPhone 14 Pro Max",
+        "precioUnitario": 1550,
+        "cantidad": 2,
+        "subtotal": 3100
+      }
+    ],
+    "total": 6999,
+    "fecha": "2026-10-04T23:41:36.317Z",
+    "estado": "Completado"
+  },
+  {
+    "id": 4,
+    "numeroPedido": "PED-117654",
+    "usuario": "admin",
+    "items": [
+      {
+        "id": 1,
+        "nombre": "MacBook Air 13\" M1",
+        "precioUnitario": 3899,
+        "cantidad": 1,
+        "subtotal": 3899
+      },
+      {
+        "id": 10,
+        "nombre": "iPhone 14 Pro Max",
+        "precioUnitario": 1550,
+        "cantidad": 2,
+        "subtotal": 3100
+      }
+    ],
+    "total": 6999,
+    "fecha": "2026-10-04T23:55:17.654Z",
+    "estado": "Completado"
+  },
+  {
+    "id": 5,
+    "numeroPedido": "PED-851660",
+    "usuario": "admin",
+    "items": [
+      {
+        "id": 2,
+        "nombre": "MacBook Air 15\" M3",
+        "precioUnitario": 5799,
+        "cantidad": 1,
+        "subtotal": 5799
+      }
+    ],
+    "total": 5799,
+    "fecha": "2026-10-05T00:07:31.660Z",
+    "estado": "Completado"
   }
 ]

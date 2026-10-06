@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Venta & Garantías | PC PE'</title>
+
+    <!-- 1. Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- 2. Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- 3. SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- 4. Estilos de la tienda -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- ==================== NAVBAR (EXACTAMENTE IGUAL A LA PRINCIPAL) ==================== -->
+    <nav class="navbar main-navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                PC PE'
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <!-- Menú principal -->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ofertas.html">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="postventa.html">Post Venta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reclamaciones.html">Libro de reclamaciones</a>
+                    </li>
+                </ul>
+                <!-- Menú del usuario -->
+                <ul class="navbar-nav">
+                    <!-- Carrito -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">
+                            🛒 Carrito
+                            <span class="badge" id="contador-carrito">0</span>
+                        </a>
+                    </li>
+                    <!-- Iniciar sesión -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" id="enlace-login">Iniciar sesión</a>
+                    </li>
+                    <!-- Usuario conectado -->
+                    <li class="nav-item dropdown d-none" id="menu-usuario">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Hola, <span id="nombre-usuario">Usuario</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="#" id="btn-salir">Cerrar sesión</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+    <main>
+        <!-- ===== PORTADA TECH CON MASCOTA 3D (IGUAL A LA PÁGINA PRINCIPAL) ===== -->
+        <section class="hero-compact">
+            <div class="container py-4">
+                <div class="row align-items-center">
+
+                    <!-- Llama 3D Gamer a la izquierda -->
+                    <div class="col-lg-6 text-center my-3">
+                        <div class="llama-wrapper">
+                            <img src="img/logo/llama.png" alt="Mascota PC PE" class="llama-3d-effect">
+                        </div>
+                    </div>
+
+                    <!-- Texto Tech a la derecha -->
+                    <div class="col-lg-6 my-3 text-center text-lg-start">
+                        <span class="tech-badge mb-2 d-inline-block">SERVICIO POST VENTA & GARANTÍAS</span>
+                        <h1 class="tech-title my-2">
+                            TU COMPRA PROTEGIDA <br>
+                            <span class="neon-text">CON RESPALDO TECH</span>
+                        </h1>
+                        <p class="tech-subtext mb-4">
+                            Rastrea tu pedido en tiempo real, consulta tu ticket de taller oficial o tramita tu garantía con nuestros técnicos especializados.
+                        </p>
+                        <!-- Botón con animación interactiva -->
+                        <a href="#modulo-postventa" class="btn-tech-action">
+                            <span>GESTIONAR MI SERVICIO</span>
+                            <i class="bi bi-arrow-down-short fs-4 icon-arrow"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SECCIÓN POSTVENTA ==================== -->
+        <section id="modulo-postventa" class="py-5">
+            <div class="container">
+
+                <div class="mb-4">
+                    <span class="text-uppercase text-info fw-bold fs-7">SOPORTE POST-COMPRA</span>
+                    <h2 class="fw-bold text-white">Centro de Garantías, Envíos y Taller</h2>
+                </div>
+
+                <!-- Grupo de Pestañas Gamer / Tech -->
+                <div class="postventa-tab-group">
+                    <button class="postventa-tab-btn active" data-tab="tab-rastreo" id="tab-rastreo-btn">
+                        <i class="bi bi-truck"></i> 1. Rastrear Pedido
+                    </button>
+                    <button class="postventa-tab-btn" data-tab="tab-garantias" id="tab-garantias-btn">
+                        <i class="bi bi-shield-shaded"></i> 2. Estado de Garantía (RMA)
+                    </button>
+                    <button class="postventa-tab-btn" data-tab="tab-nueva-garantia" id="tab-nueva-garantia-btn">
+                        <i class="bi bi-wrench-adjustable"></i> 3. Solicitar Soporte
+                    </button>
+                    <button class="postventa-tab-btn" data-tab="tab-politicas" id="tab-politicas-btn">
+                        <i class="bi bi-arrow-left-right"></i> 4. Cambios y Devoluciones
+                    </button>
+                    <button class="postventa-tab-btn" data-tab="tab-faq" id="tab-faq-btn">
+                        <i class="bi bi-question-circle"></i> 5. Preguntas Frecuentes
+                    </button>
+                </div>
+
+                <!-- ================= PESTAÑA 1: RASTREO DE PEDIDOS ================= -->
+                <div class="postventa-tab-pane" id="tab-rastreo">
+                    <div class="filter-panel mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-3 mb-lg-0">
+                                <h4 class="text-white mb-1"><i class="bi bi-geo-alt-fill text-info me-2"></i>Seguimiento de Despacho en Vivo</h4>
+                                <p class="text-muted small mb-0">
+                                    Ingresa el código que te generó el sistema al comprar (ejemplo: <strong class="text-white">PED-413842</strong>).
+                                </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <form id="form-rastreo-pedido" class="d-flex gap-2">
+                                    <div class="input-group postventa-input-group">
+                                        <span class="input-group-text"><i class="bi bi-receipt"></i></span>
+                                        <input type="text" class="form-control" id="input-codigo-pedido" placeholder="Ej: PED-413842" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-finalizar-compra px-4 text-nowrap" id="btn-rastrear-submit">
+                                        <i class="bi bi-search me-1"></i> Rastrear
+                                    </button>
+                                </form>
+                                <div class="mt-2 text-end">
+                                    <button type="button" class="btn btn-link btn-sm text-info p-0 text-decoration-none" onclick="probarPedidoEjemplo('PED-413842')">
+                                        <i class="bi bi-lightning-charge me-1"></i> Probar con pedido de ejemplo (PED-413842)
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resultado de búsqueda de pedido -->
+                    <div id="resultado-rastreo-pedido">
+                        <div class="card-postventa text-center py-5">
+                            <i class="bi bi-box2 text-info" style="font-size: 3rem;"></i>
+                            <h4 class="text-white mt-3">Ingresa tu número de pedido</h4>
+                            <p class="text-muted small mb-0">Visualizarás el estado en tiempo real, desglose de componentes comprados y fecha de entrega.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= PESTAÑA 2: CONSULTA DE GARANTÍA / RMA ================= -->
+                <div class="postventa-tab-pane d-none" id="tab-garantias">
+                    <div class="filter-panel mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-3 mb-lg-0">
+                                <h4 class="text-white mb-1"><i class="bi bi-shield-shaded text-info me-2"></i>Consulta de Ticket de Taller Oficial (RMA)</h4>
+                                <p class="text-muted small mb-0">
+                                    Si ingresaste un componente o laptop para revisión o cambio, consulta con tu ticket (ejemplo: <strong class="text-white">GAR-102938</strong>).
+                                </p>
+                            </div>
+                            <div class="col-lg-6">
+                                <form id="form-consulta-garantia" class="d-flex gap-2">
+                                    <div class="input-group postventa-input-group">
+                                        <span class="input-group-text"><i class="bi bi-ticket-perforated"></i></span>
+                                        <input type="text" class="form-control" id="input-codigo-garantia" placeholder="Ej: GAR-102938" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-finalizar-compra px-4 text-nowrap" id="btn-consultar-garantia-submit">
+                                        <i class="bi bi-search me-1"></i> Consultar
+                                    </button>
+                                </form>
+                                <div class="mt-2 text-end">
+                                    <span class="text-muted small">Ejemplos para probar: </span>
+                                    <button type="button" class="btn btn-link btn-sm text-info p-0 text-decoration-none me-2" onclick="probarTicketEjemplo('GAR-102938')">GAR-102938</button>
+                                    <button type="button" class="btn btn-link btn-sm text-info p-0 text-decoration-none" onclick="probarTicketEjemplo('GAR-849201')">GAR-849201</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Resultado de búsqueda de garantía -->
+                    <div id="resultado-consulta-garantia">
+                        <div class="card-postventa text-center py-5">
+                            <i class="bi bi-cpu text-info" style="font-size: 3rem;"></i>
+                            <h4 class="text-white mt-3">Consulta el diagnóstico de tu equipo</h4>
+                            <p class="text-muted small mb-0">Podrás revisar el avance técnico, pruebas de estrés y veredicto del laboratorio central de PC PE'.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= PESTAÑA 3: SOLICITAR SOPORTE O GARANTÍA ================= -->
+                <div class="postventa-tab-pane d-none" id="tab-nueva-garantia">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            <div class="card-postventa p-4">
+                                <div class="d-flex align-items-center gap-3 mb-4 border-bottom border-secondary pb-3">
+                                    <div class="brand-icon text-dark fs-3"><i class="bi bi-tools"></i></div>
+                                    <div>
+                                        <h3 class="h4 text-white mb-1">Solicitud de Servicio Técnico & Garantía</h3>
+                                        <p class="text-muted small mb-0">Registra el componente o producto que requiere diagnóstico o cambio por garantía.</p>
+                                    </div>
+                                </div>
+
+                                <div id="mensaje-registro-garantia" class="alert d-none" role="alert"></div>
+
+                                <form id="form-registro-garantia" novalidate>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="g-nombre" class="form-label">Nombre y Apellidos *</label>
+                                            <input type="text" class="form-control" id="g-nombre" placeholder="Tu nombre completo" required>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="g-dni" class="form-label">DNI *</label>
+                                            <input type="text" class="form-control" id="g-dni" maxlength="8" placeholder="8 dígitos" required>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="g-telefono" class="form-label">Teléfono / WhatsApp *</label>
+                                            <input type="tel" class="form-control" id="g-telefono" placeholder="987654321" required>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label for="g-email" class="form-label">Correo Electrónico *</label>
+                                            <input type="email" class="form-control" id="g-email" placeholder="correo@ejemplo.com" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="g-pedido" class="form-label">N° de Pedido o Boleta (Opcional)</label>
+                                            <input type="text" class="form-control" id="g-pedido" placeholder="Ej: PED-413842">
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <label for="g-producto" class="form-label">Producto o Componente *</label>
+                                            <input type="text" class="form-control" id="g-producto" placeholder="Ej: Tarjeta Gráfica RTX 5080 o Laptop Victus" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="g-serie" class="form-label">Número de Serie (S/N)</label>
+                                            <input type="text" class="form-control" id="g-serie" placeholder="Ubicado en la caja o etiqueta del hardware">
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="g-tipo" class="form-label">Tipo de Solicitud *</label>
+                                            <select class="form-select" id="g-tipo" required>
+                                                <option value="Garantía por Falla de Fábrica">Garantía por Falla de Fábrica (Cobertura oficial)</option>
+                                                <option value="Mantenimiento Preventivo Gamer">Mantenimiento Preventivo y Cambio de Pasta Térmica</option>
+                                                <option value="Diagnóstico de Hardware y BIOS">Diagnóstico de compatibilidad y actualización de BIOS</option>
+                                                <option value="Asistencia Técnica Remota">Asistencia técnica remota o configuración de drivers</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="g-descripcion" class="form-label">Descripción detallada del problema o falla *</label>
+                                            <textarea class="form-control" id="g-descripcion" rows="4" placeholder="Describe qué sucede (ej: la pantalla parpadea, no enciende, artefactos en juegos, etc.)..." required></textarea>
+                                        </div>
+
+                                        <div class="col-12 text-end mt-4">
+                                            <button type="submit" class="btn btn-finalizar-compra px-4 py-2">
+                                                <i class="bi bi-send-check me-2"></i> Registrar Ticket en el Sistema
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= PESTAÑA 4: POLÍTICAS DE CAMBIOS Y DEVOLUCIONES ================= -->
+                <div class="postventa-tab-pane d-none" id="tab-politicas">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card-postventa h-100">
+                                <div class="text-cyan fs-2 mb-2"><i class="bi bi-arrow-repeat"></i></div>
+                                <h4 class="text-white">Cambio Directo (7 Días)</h4>
+                                <p class="text-muted small">
+                                    Si tu producto presenta defectos de fábrica durante los primeros <strong>7 días calendario</strong> desde la entrega, gestionamos el cambio directo por una unidad nueva.
+                                </p>
+                                <ul class="text-muted small ps-3">
+                                    <li>Presentar comprobante o número de pedido.</li>
+                                    <li>Caja original y accesorios completos.</li>
+                                    <li>Validación exprés en taller en 24 horas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-postventa h-100">
+                                <div class="text-cyan fs-2 mb-2"><i class="bi bi-shield-lock-fill"></i></div>
+                                <h4 class="text-white">Garantía Oficial de Marca</h4>
+                                <p class="text-muted small">
+                                    Todos los componentes cuentan con el respaldo directo y soporte de los fabricantes autorizados:
+                                </p>
+                                <ul class="text-muted small ps-3">
+                                    <li><strong>ASUS, MSI, Gigabyte:</strong> 24 a 36 meses.</li>
+                                    <li><strong>AMD Ryzen / Intel Core:</strong> 36 meses oficial.</li>
+                                    <li><strong>Apple / Laptops:</strong> 12 meses oficial.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-postventa h-100">
+                                <div class="text-cyan fs-2 mb-2"><i class="bi bi-patch-check"></i></div>
+                                <h4 class="text-white">Laboratorio Oficial PC PE'</h4>
+                                <p class="text-muted small">
+                                    Contamos con banco de pruebas para estrés térmico y calibración de tarjetas de video y placas madre.
+                                </p>
+                                <div class="mt-3">
+                                    <a href="https://wa.me/51998877665?text=Hola%20Lucia%20necesito%20soporte%20tecnico%20post%20venta" target="_blank" class="btn btn-whatsapp w-100">
+                                        <i class="bi bi-whatsapp me-1"></i> Hablar con Soporte Técnico
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-postventa mt-4">
+                        <h4 class="text-white mb-3"><i class="bi bi-exclamation-circle text-info me-2"></i>Condiciones y Exclusiones de Garantía</h4>
+                        <div class="row g-3 text-muted small">
+                            <div class="col-md-6">
+                                <h6 class="text-white">Cobertura incluida:</h6>
+                                <ul class="ps-3">
+                                    <li>Defectos internos de fabricación en chips y circuitos.</li>
+                                    <li>Problemas de funcionamiento en memorias RAM y discos SSD.</li>
+                                    <li>Fallas en fuentes de poder certificadas sin alteración externa.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-white">No cubre:</h6>
+                                <ul class="ps-3">
+                                    <li>Daños físicos (roturas, pines doblados, golpes).</li>
+                                    <li>Quemaduras por sobrevoltaje de instalaciones eléctricas sin pozo a tierra.</li>
+                                    <li>Sellos de fábrica removidos o manipulados por terceros.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= PESTAÑA 5: PREGUNTAS FRECUENTES ================= -->
+                <div class="postventa-tab-pane d-none" id="tab-faq">
+                    <div class="card-postventa">
+                        <h4 class="text-white mb-4"><i class="bi bi-chat-square-quote text-cyan me-2"></i>Preguntas Frecuentes Post-Compra</h4>
+
+                        <div class="accordion postventa-accordion" id="accordionPostVenta">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        ¿Cuánto tiempo demora la entrega de mi pedido?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordionPostVenta">
+                                    <div class="accordion-body">
+                                        En Lima Metropolitana las entregas se realizan dentro de las <strong>24 a 48 horas hábiles</strong>. Para provincias a nivel nacional, los envíos se realizan vía Olva Courier o Shalom en un plazo de 2 a 4 días hábiles.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        ¿Qué debo hacer si instalé mi tarjeta gráfica o RAM y no da video?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionPostVenta">
+                                    <div class="accordion-body">
+                                        1. Asegúrate de conectar el cable HDMI o DisplayPort a la <strong>tarjeta gráfica dedicada</strong> y no a la placa madre.<br>
+                                        2. Verifica que las memorias RAM hayan hecho el "clic" en los slots recomendados (normalmente slots 2 y 4).<br>
+                                        3. Si el inconveniente continúa, contáctanos por WhatsApp con soporte técnico para asistirte sin costo adicional.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        ¿Cómo tramito mi garantía si me encuentro en provincia?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionPostVenta">
+                                    <div class="accordion-body">
+                                        Puedes generar tu solicitud en la pestaña <strong>"3. Solicitar Soporte"</strong>. Nuestro equipo te asignará un código RMA y coordinará contigo el envío hacia nuestro taller central con flete cubierto en caso de falla de fábrica verificada.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        ¿Realizan actualización de BIOS gratuita para combos de placa y procesador?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordionPostVenta">
+                                    <div class="accordion-body">
+                                        ¡Sí! Al adquirir placa y procesador con PC PE', la actualización a la versión de BIOS más reciente y estable es totalmente <strong>gratuita</strong> antes del despacho.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER (EXACTAMENTE IGUAL A LA PRINCIPAL) ==================== -->
+    <footer class="main-footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Brand Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-brand d-flex align-items-center gap-2 mb-3">
+                        <i class="bi bi-lightning-charge-fill text-warning"></i>
+                        <span>PC PE'</span>
+                    </h5>
+                    <p class="footer-desc">
+                        Tienda de tecnología: laptops, celulares, componentes, accesorios y monitores con respaldo gamer oficial.
+                    </p>
+                </div>
+
+                <!-- Enlaces -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title mb-3">Enlaces</h5>
+                    <ul class="list-unstyled footer-links mb-0">
+                        <li><a href="index.html">Catálogo Oficial</a></li>
+                        <li><a href="ofertas.html">Ofertas Especiales</a></li>
+                        <li><a href="contacto.html">Contacto con Asesores</a></li>
+                        <li><a href="postventa.html">Servicio Post Venta & Garantías</a></li>
+                        <li><a href="reclamaciones.html">Libro de Reclamaciones</a></li>
+                        <li><a href="login.html">Iniciar Sesión</a></li>
+                    </ul>
+                </div>
+
+                <!-- Síguenos -->
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="footer-title mb-3">Síguenos y Soporte</h5>
+                    <p class="text-muted small mb-2">Canal directo de Soporte Técnico:</p>
+                    <a href="https://wa.me/51998877665" target="_blank" class="btn btn-whatsapp btn-sm mb-3">
+                        <i class="bi bi-whatsapp me-1"></i> WhatsApp Técnico: 998 877 665
+                    </a>
+                    <div class="footer-socials d-flex gap-3">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider my-4">
+
+            <div class="text-center text-muted small">
+                © 2026 PC PE'. Proyecto académico – Curso de Desarrollo Web.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/postventa.js"></script>
+
+    <script type="text/javascript">
+        (function (d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function () {
+                window.voiceflow.chat.load({
+                    verify: { projectID: '6abf493f896cd848e77fa9e6' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    voice: {
+                        url: "https://runtime-api.voiceflow.com"
+                    }
+                });
+            }
+            v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+    </script>
+</body>
+
+</html>

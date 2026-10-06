@@ -49,19 +49,27 @@ document.addEventListener("DOMContentLoaded", function () {
         throw new Error(data.error || "No se pudo procesar el pedido.");
       }
 
-      // 2. Alerta con datos oficiales del servidor
+      // 2. Alerta con datos oficiales del servidor y botón para rastrear
       Swal.fire({
         title: "¡Compra realizada con éxito!",
         html: `
           <div class="text-start p-2">
-            <p class="mb-1">Tu orden fue confirmada y guardada en el servidor Node.js.</p>
+            <p class="mb-1 text-light">Tu orden fue confirmada y guardada en el servidor Node.js.</p>
             <p class="mb-1"><strong>N° de Pedido:</strong> <span class="badge bg-primary fs-6">${data.numeroPedido}</span></p>
             <p class="mb-1"><strong>Total oficial:</strong> ${formatearPrecio(data.total)}</p>
             <p class="mb-0 text-muted small"><strong>Fecha:</strong> ${new Date(data.fecha).toLocaleString("es-PE")}</p>
           </div>
         `,
         icon: "success",
-        confirmButtonText: "Entendido"
+        showCancelButton: true,
+        confirmButtonText: '<i class="bi bi-truck me-1"></i> Rastrear en Post Venta',
+        cancelButtonText: 'Seguir comprando',
+        confirmButtonColor: '#087dff',
+        cancelButtonColor: '#6c757d'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.location.href = `postventa.html?pedido=${encodeURIComponent(data.numeroPedido)}`;
+        }
       });
 
       vaciarCarrito();
@@ -105,6 +113,11 @@ function renderizarCarrito() {
     const precio = precioFinal(p);
     const subtotal = precio * item.cantidad;
 
+    const stock = typeof p.stock === "number" ? p.stock : 999;
+    const infoStock = stock <= 5
+      ? '<br><small class="text-warning fw-bold"><i class="bi bi-fire me-1"></i>¡Solo ' + stock + ' en stock!</small>'
+      : '<br><small class="text-cyan"><i class="bi bi-box-seam me-1"></i>Stock: ' + stock + ' unid.</small>';
+
     filas +=
       "<tr>" +
       '<td style="width:80px">' +
@@ -118,18 +131,20 @@ function renderizarCarrito() {
       p.nombre +
       '<br><small class="text-muted">' +
       p.categoria +
-      "</small></td>" +
+      "</small>" +
+      infoStock +
+      "</td>" +
       "<td>" +
       formatearPrecio(precio) +
       "</td>" +
       '<td style="width:120px">' +
-      '<input type="number" class="form-control form-control-sm" min="1" value="' +
+      '<input type="number" class="form-control form-control-sm" min="1" max="' + stock + '" value="' +
       item.cantidad +
       '" onchange="cambiarCantidad(' +
       p.id +
       ", parseInt(this.value, 10)); renderizarCarrito();\">" +
       "</td>" +
-      '<td class="fw-bold">' +
+      '<td class="fw-bold text-cyan">' +
       formatearPrecio(subtotal) +
       "</td>" +
       "<td>" +

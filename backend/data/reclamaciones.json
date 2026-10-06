@@ -9,5 +9,38 @@
     "detalle": "Demora en la entrega del producto adquirido.",
     "fecha": "2026-09-29T17:53:33.834Z",
     "estado": "Pendiente de atención"
+  },
+  {
+    "id": 2,
+    "codigo": "REC-681030",
+    "nombre": "Juan Perez",
+    "dni": "12345678",
+    "email": "juan@correo.com",
+    "tipo": "Reclamo",
+    "detalle": "Demora en la entrega del producto adquirido.",
+    "fecha": "2026-10-04T23:31:21.030Z",
+    "estado": "Pendiente de atención"
+  },
+  {
+    "id": 3,
+    "codigo": "REC-296305",
+    "nombre": "Juan Perez",
+    "dni": "12345678",
+    "email": "juan@correo.com",
+    "tipo": "Reclamo",
+    "detalle": "Demora en la entrega del producto adquirido.",
+    "fecha": "2026-10-04T23:41:36.305Z",
+    "estado": "Pendiente de atención"
+  },
+  {
+    "id": 4,
+    "codigo": "REC-117643",
+    "nombre": "Juan Perez",
+    "dni": "12345678",
+    "email": "juan@correo.com",
+    "tipo": "Reclamo",
+    "detalle": "Demora en la entrega del producto adquirido.",
+    "fecha": "2026-10-04T23:55:17.643Z",
+    "estado": "Pendiente de atención"
   }
 ]

@@ -5,5 +5,26 @@
     "email": "ana@correo.com",
     "mensaje": "Quisiera información sobre cotizaciones corporativas.",
     "fecha": "2026-09-29T17:53:33.838Z"
+  },
+  {
+    "id": 2,
+    "nombre": "Ana Gomez",
+    "email": "ana@correo.com",
+    "mensaje": "Quisiera información sobre cotizaciones corporativas.",
+    "fecha": "2026-10-04T23:31:21.035Z"
+  },
+  {
+    "id": 3,
+    "nombre": "Ana Gomez",
+    "email": "ana@correo.com",
+    "mensaje": "Quisiera información sobre cotizaciones corporativas.",
+    "fecha": "2026-10-04T23:41:36.311Z"
+  },
+  {
+    "id": 4,
+    "nombre": "Ana Gomez",
+    "email": "ana@correo.com",
+    "mensaje": "Quisiera información sobre cotizaciones corporativas.",
+    "fecha": "2026-10-04T23:55:17.648Z"
   }
 ]

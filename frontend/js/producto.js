@@ -119,6 +119,25 @@ document.addEventListener("DOMContentLoaded", async function () {
 
 
 
+  const stock = typeof producto.stock === "number" ? producto.stock : 10;
+  let htmlStock;
+  let btnAgregarHTML;
+  let inputCantidadHTML;
+
+  if (stock === 0) {
+    htmlStock = '<div class="mb-3"><span class="badge badge-stock badge-stock-out fs-6 px-3 py-2"><i class="bi bi-x-circle-fill me-1"></i>Producto Agotado</span></div>';
+    inputCantidadHTML = '<input type="number" id="cantidad" class="form-control" style="width:90px" value="0" disabled>';
+    btnAgregarHTML = '<button id="btn-agregar" class="btn btn-lg btn-secondary opacity-50" disabled><i class="bi bi-slash-circle me-1"></i>Agotado</button>';
+  } else if (stock <= 5) {
+    htmlStock = '<div class="mb-3"><span class="badge badge-stock badge-stock-low fs-6 px-3 py-2"><i class="bi bi-fire me-1"></i>¡Últimas ' + stock + ' unidades disponibles!</span></div>';
+    inputCantidadHTML = '<input type="number" id="cantidad" class="form-control" style="width:90px" value="1" min="1" max="' + stock + '">';
+    btnAgregarHTML = '<button id="btn-agregar" class="btn btn-lg btn-agregar-carrito"><i class="bi bi-cart-plus me-1"></i>Agregar al carrito</button>';
+  } else {
+    htmlStock = '<div class="mb-3"><span class="badge badge-stock badge-stock-ok fs-6 px-3 py-2"><i class="bi bi-box-seam me-1"></i>Stock disponible: ' + stock + ' unidades</span></div>';
+    inputCantidadHTML = '<input type="number" id="cantidad" class="form-control" style="width:90px" value="1" min="1" max="' + stock + '">';
+    btnAgregarHTML = '<button id="btn-agregar" class="btn btn-lg btn-agregar-carrito"><i class="bi bi-cart-plus me-1"></i>Agregar al carrito</button>';
+  }
+
   contenedor.innerHTML =
     '<div class="row g-4">' +
     '  <div class="col-md-5">' +
@@ -135,11 +154,13 @@ document.addEventListener("DOMContentLoaded", async function () {
     producto.descripcion +
     "</p>" +
     htmlPrecio +
+    htmlStock +
     '    <div class="d-flex align-items-center gap-2 mb-3">' +
     '      <label for="cantidad" class="form-label mb-0">Cantidad:</label>' +
-    '      <input type="number" id="cantidad" class="form-control" style="width:90px" value="1" min="1">' +
+    inputCantidadHTML +
+    '<small class="text-muted">(Máximo ' + stock + ' unid.)</small>' +
     "    </div>" +
-    '    <button id="btn-agregar" class="btn btn-lg btn-agregar-carrito">Agregar al carrito</button>' +
+    btnAgregarHTML +
     '    <a href="index.html" class="btn btn-link seguir-comprando">Seguir comprando</a>' +
     "  </div>" +
     "</div>" +
@@ -150,11 +171,18 @@ document.addEventListener("DOMContentLoaded", async function () {
       "</tbody></table>" : "");
 
   // Botón agregar al carrito
-  document.getElementById("btn-agregar").addEventListener("click", function () {
-    const cantidad = parseInt(document.getElementById("cantidad").value, 10) || 1;
-    agregarAlCarrito(producto.id, cantidad);
-    mostrarAviso("Se agregaron " + cantidad + " unidad(es) al carrito.");
-  });
+  const btnAgregar = document.getElementById("btn-agregar");
+  if (btnAgregar && stock > 0) {
+    btnAgregar.addEventListener("click", function () {
+      const cantidad = parseInt(document.getElementById("cantidad").value, 10) || 1;
+      if (cantidad > stock) {
+        alert("Lo sentimos, solo disponemos de " + stock + " unidades en stock.");
+        return;
+      }
+      agregarAlCarrito(producto.id, cantidad);
+      mostrarAviso("Se agregaron " + cantidad + " unidad(es) al carrito.");
+    });
+  }
 });
 
 // Aviso temporal (toast simple)

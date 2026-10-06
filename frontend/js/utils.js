@@ -99,10 +99,29 @@ function guardarCarrito(carrito) {
 
 function agregarAlCarrito(id, cantidad) {
   cantidad = cantidad || 1;
+  const prod = buscarProducto(id);
+  const stock = prod && typeof prod.stock === "number" ? prod.stock : 999;
+
   const carrito = obtenerCarrito();
   const item = carrito.find(function (i) {
     return i.id === Number(id);
   });
+
+  const cantidadActual = item ? item.cantidad : 0;
+  if (cantidadActual + cantidad > stock) {
+    const nombreProd = prod ? prod.nombre : "este producto";
+    if (typeof Swal !== "undefined") {
+      Swal.fire({
+        icon: "warning",
+        title: "Límite de stock alcanzado",
+        text: `Solo disponemos de ${stock} unidad(es) de "${nombreProd}". Ya tienes ${cantidadActual} en tu carrito.`,
+        confirmButtonColor: "#38bdf8"
+      });
+    } else {
+      alert(`Solo disponemos de ${stock} unidad(es) de ${nombreProd}.`);
+    }
+    return;
+  }
 
   if (item) {
     item.cantidad += cantidad;
@@ -120,6 +139,17 @@ function cambiarCantidad(id, cantidad) {
     return i.id === Number(id);
   });
   if (!item) return;
+
+  const prod = buscarProducto(id);
+  const stock = prod && typeof prod.stock === "number" ? prod.stock : 999;
+
+  if (cantidad > stock) {
+    alert(`Solo disponemos de ${stock} unidad(es) de este producto.`);
+    item.cantidad = stock;
+    guardarCarrito(carrito);
+    if (typeof renderizarCarrito === "function") renderizarCarrito();
+    return;
+  }
 
   item.cantidad = cantidad;
   if (item.cantidad <= 0) {

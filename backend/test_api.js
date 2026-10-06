@@ -95,7 +95,32 @@ async function testAll() {
     });
     console.log("✓ POST /api/pedidos:", test10.status, test10.data.numeroPedido, "Total: S/ " + test10.data.total);
 
-    console.log("\n ¡TODAS LAS PRUEBAS DE NODE.JS PASARON EXITOSAMENTE!");
+    // 11. Consulta de Pedido (Tracking)
+    const test11 = await fetchJSON(`/api/pedidos/${test10.data.numeroPedido}`);
+    console.log("✓ GET /api/pedidos/:numero:", test11.status, test11.data.pedido.numeroPedido, "Estado:", test11.data.pedido.estado);
+
+    // 12. Registrar Solicitud de Garantía (RMA)
+    const test12 = await fetchJSON('/api/garantias', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        nombre: "Carlos Ramos",
+        dni: "87654321",
+        email: "carlos@correo.com",
+        telefono: "998877665",
+        numeroPedido: test10.data.numeroPedido,
+        producto: "Teclado Mecánico FiddlerZ RGB",
+        tipoServicio: "Garantía por Falla",
+        descripcion: "La tecla espaciadora no responde correctamente."
+      })
+    });
+    console.log("✓ POST /api/garantias:", test12.status, test12.data.codigo, test12.data.mensaje);
+
+    // 13. Consultar Estado de Garantía
+    const test13 = await fetchJSON(`/api/garantias/${test12.data.codigo}`);
+    console.log("✓ GET /api/garantias/:codigo:", test13.status, test13.data.garantia.codigo, "Estado:", test13.data.garantia.estado);
+
+    console.log("\n✨ ¡TODAS LAS PRUEBAS DE NODE.JS (INCLUYENDO POST VENTA Y GARANTÍAS) PASARON EXITOSAMENTE!");
     process.exit(0);
   } catch (e) {
     console.error("Error en pruebas:", e);

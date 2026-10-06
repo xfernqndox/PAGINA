@@ -67,9 +67,9 @@ app.get('/api/productos', (req, res) => {
   if (buscar && buscar.trim() !== '') {
     const texto = buscar.trim().toLowerCase();
     productos = productos.filter((p) =>
-      p.nombre.toLowerCase().includes(texto) ||
-      p.descripcion.toLowerCase().includes(texto) ||
-      p.categoria.toLowerCase().includes(texto)
+      (p.nombre && p.nombre.toLowerCase().includes(texto)) ||
+      (p.descripcion && p.descripcion.toLowerCase().includes(texto)) ||
+      (p.categoria && p.categoria.toLowerCase().includes(texto))
     );
   }
 
@@ -199,6 +199,81 @@ app.get('/api/reclamaciones/:codigo', (req, res) => {
 });
 
 // ------------------------------------------------------------
+// 2.1 SERVICIO POST VENTA Y GARANTÍAS (RMA)
+// ------------------------------------------------------------
+
+// POST /api/garantias - Registrar solicitud de garantía o soporte técnico
+app.post('/api/garantias', (req, res) => {
+  const { nombre, dni, email, telefono, numeroPedido, producto, serie, tipoServicio, descripcion } = req.body;
+  const errores = [];
+
+  if (!nombre || nombre.trim().length < 3) {
+    errores.push('El nombre debe tener al menos 3 caracteres.');
+  }
+  if (!dni || !/^\d{8}$/.test(dni.trim())) {
+    errores.push('El DNI debe tener exactamente 8 dígitos.');
+  }
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
+    errores.push('Ingresa un correo electrónico válido.');
+  }
+  if (!producto || producto.trim().length < 2) {
+    errores.push('Especifica el producto o componente.');
+  }
+  if (!descripcion || descripcion.trim().length < 10) {
+    errores.push('La descripción de la falla o motivo debe tener al menos 10 caracteres.');
+  }
+
+  if (errores.length > 0) {
+    return res.status(400).json({ ok: false, errores });
+  }
+
+  const garantias = leerJSON('garantias.json');
+  const codigo = 'GAR-' + Date.now().toString().slice(-6);
+
+  const nuevaGarantia = {
+    id: garantias.length + 1,
+    codigo,
+    nombre: nombre.trim(),
+    dni: dni.trim(),
+    email: email.trim(),
+    telefono: (telefono || '').trim(),
+    numeroPedido: (numeroPedido || '').trim().toUpperCase(),
+    producto: producto.trim(),
+    serie: (serie || '').trim(),
+    tipoServicio: tipoServicio || 'Garantía por Falla',
+    descripcion: descripcion.trim(),
+    fecha: new Date().toISOString(),
+    estado: 'En evaluación técnica',
+    diagnosticoTecnico: 'Ticket recepcionado. Será asignado a un técnico especialista en las próximas 24 horas.',
+    tecnicoAsignado: "Taller Central PC PE'"
+  };
+
+  garantias.push(nuevaGarantia);
+  escribirJSON('garantias.json', garantias);
+
+  res.status(201).json({
+    ok: true,
+    codigo,
+    garantia: nuevaGarantia,
+    mensaje: 'Solicitud de garantía o servicio técnico registrada exitosamente.'
+  });
+});
+
+// GET /api/garantias/:codigo - Consultar estado de ticket de garantía
+app.get('/api/garantias/:codigo', (req, res) => {
+  const garantias = leerJSON('garantias.json');
+  const garantia = garantias.find(
+    (g) => g.codigo.toUpperCase() === req.params.codigo.toUpperCase()
+  );
+
+  if (!garantia) {
+    return res.status(404).json({ ok: false, error: 'Ticket de garantía no encontrado.' });
+  }
+
+  res.json({ ok: true, garantia });
+});
+
+// ------------------------------------------------------------
 // 3. ASESORES Y CONTACTO
 // ------------------------------------------------------------
 
@@ -305,6 +380,15 @@ app.post('/api/pedidos', (req, res) => {
     }
 
     const cantidad = Math.max(1, Number(item.cantidad) || 1);
+
+    // Validación de stock disponible
+    if (prod.stock !== undefined && prod.stock < cantidad) {
+      return res.status(400).json({
+        ok: false,
+        error: `Stock insuficiente para "${prod.nombre}". Disponible: ${prod.stock} unidad(es).`
+      });
+    }
+
     const precioUnitario = calcularPrecioFinal(prod);
     const subtotal = precioUnitario * cantidad;
     totalCalculado += subtotal;
@@ -317,6 +401,15 @@ app.post('/api/pedidos', (req, res) => {
       subtotal
     });
   }
+
+  // Descontar stock de los productos comprados
+  for (const item of itemsVerificados) {
+    const prod = productos.find((p) => p.id === item.id);
+    if (prod && prod.stock !== undefined) {
+      prod.stock = Math.max(0, prod.stock - item.cantidad);
+    }
+  }
+  escribirJSON('productos.json', productos);
 
   const pedidos = leerJSON('pedidos.json');
   const numeroPedido = 'PED-' + Date.now().toString().slice(-6);
@@ -375,8 +468,10 @@ app.use((req, res) => {
 // ============================================================
 app.listen(PORT, () => {
   console.log(`===============================================`);
-  console.log(`Servidor PC PE' activo en Node.js`);
-  console.log(`URL: http://localhost:${PORT}`);
-  console.log(`API de Productos: http://localhost:${PORT}/api/productos`);
+  console.log(`🚀 Servidor PC PE' activo en Node.js`);
+  console.log(`🌐 Tienda Web:    http://localhost:${PORT}`);
+  console.log(`📦 Post Venta:    http://localhost:${PORT}/postventa.html`);
+  console.log(`📡 API Productos: http://localhost:${PORT}/api/productos`);
+  console.log(`🛡️ API Garantías: http://localhost:${PORT}/api/garantias`);
   console.log(`===============================================`);
 });
